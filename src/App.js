@@ -6,6 +6,7 @@ import Media from './Media';
 import Blog from './Blog';
 import About from './About';
 import Speakers from './Speakers';
+import PageNotFound from './PageNotFound';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/blog" element={<Blog></Blog>}></Route>
                 <Route path="/about" element={<About></About>}></Route>
                 <Route path="/speakers" element={<Speakers></Speakers>}></Route>
+                <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
             </Routes>
         </BrowserRouter>
     )
