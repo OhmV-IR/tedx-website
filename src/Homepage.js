@@ -1,7 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+function Homepage() {
   return (
     <div id="react-root">
       <h1>TedX website</h1>
