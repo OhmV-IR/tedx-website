@@ -1,0 +1,73 @@
+#siteMenu {
+    display: none;
+}
+#menuIcon {
+    display: block;
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+}
+#aboutIcon {
+    position: absolute;
+    top: 12%;
+    left: 1%;
+}
+#mediaIcon {
+    position: absolute;
+    top: 18%;
+    left: 1%;
+}
+#blogIcon {
+    position: absolute;
+    top: 24%;
+    left: 1%;
+}
+#sponsorsIcon {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+}
+#speakersIcon {
+    position: absolute;
+    top: 36%;
+    left: 1%;
+}
+#scheduleIcon {
+    position: absolute;
+    top: 42%;
+    left: 1%;
+}
+#aboutLabel {
+    position: absolute;
+    top: 9.6%;
+    left: 4%;
+}
+#mediaLabel {
+    position: absolute;
+    top: 15.6%;
+    left: 4%;
+}
+#blogLabel {
+    position: absolute;
+    top: 21.6%;
+    left: 4%;
+}
+#sponsorsLabel {
+    position: absolute;
+    top: 27.6%;
+    left: 4%;
+}
+#speakersLabel {
+    position: absolute;
+    top: 33.6%;
+    left: 4%;
+}
+#scheduleLabel {
+    position: absolute;
+    top: 39.6%;
+    left: 4%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
