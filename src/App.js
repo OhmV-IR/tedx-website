@@ -15,30 +15,30 @@ function App() {
     const [siteMenuEnabled, setSiteMenuEnabled] = useState(false)
     return (
         <div id="approot">
-        <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={ToggleSiteMenu}></IconMenu2>
+        <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={ToggleSiteMenu} color="#EB0028"></IconMenu2>
         <div id="siteMenu">
             <a href="/about">
-            <IconInfoSquare id="aboutIcon"></IconInfoSquare>
+            <IconInfoSquare id="aboutIcon" color="#EB0028"></IconInfoSquare>
             <h3 id="aboutLabel">About</h3>
             </a>
             <a href="/blog">
-            <IconNotebook id="blogIcon"></IconNotebook>
+            <IconNotebook id="blogIcon" color="#EB0028"></IconNotebook>
             <h3 id="blogLabel">Blog</h3>
             </a>
             <a href="/media">
-            <IconPhoto id="mediaIcon"></IconPhoto>
+            <IconPhoto id="mediaIcon" color="#EB0028"></IconPhoto>
             <h3 id="mediaLabel">Media</h3>
             </a>
             <a href="/sponsors">
-            <IconCurrencyDollar id="sponsorsIcon"></IconCurrencyDollar>
+            <IconCurrencyDollar id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
             <h3 id="sponsorsLabel">Sponsors</h3>
             </a>
             <a href="/schedule">
-            <IconCalendarEvent id="scheduleIcon"></IconCalendarEvent>
+            <IconCalendarEvent id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
             <h3 id="scheduleLabel">Schedule</h3>
             </a>
             <a href="/speakers">
-            <IconUsers id="speakersIcon"></IconUsers>
+            <IconUsers id="speakersIcon" color="#EB0028"></IconUsers>
             <h3 id="speakersLabel">Speakers</h3>
             </a>
         </div>
