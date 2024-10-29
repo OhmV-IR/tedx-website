@@ -8,14 +8,17 @@ import Blog from './Blog';
 import About from './About';
 import Speakers from './Speakers';
 import PageNotFound from './PageNotFound';
-import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalendarEvent, IconUsers, IconMenu2 } from "@tabler/icons-react";
+import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalendarEvent, IconUsers, IconMenu2, IconX} from "@tabler/icons-react";
 import './App.css';
 
 function App() {
     const [siteMenuEnabled, setSiteMenuEnabled] = useState(false)
     return (
         <div id="approot">
-        <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={ToggleSiteMenu} color="#EB0028"></IconMenu2>
+        {siteMenuEnabled 
+        ? <IconX stroke={2} size={44} id="menuIcon" onClick={ToggleSiteMenu} color="#EB0028"></IconX>
+        : <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={ToggleSiteMenu} color="#EB0028"></IconMenu2>
+        }
         <div id="siteMenu">
             <a href="/about">
             <IconInfoSquare id="aboutIcon" color="#EB0028"></IconInfoSquare>

@@ -1,5 +1,6 @@
 #siteMenu {
     display: none;
+    background-color: white;
 }
 #menuIcon {
     display: block;
@@ -70,4 +71,7 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+body {
+    font-family: 'Helvetica', 'Arial', 'sans-serif'
 }
