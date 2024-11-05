@@ -68,8 +68,11 @@ function App() {
                 currentMenuItem.children.item(0).style.animation = "menu-open".concat(i.toString(), "icon", " 0.4s linear 0s 1 normal");
                 currentMenuItem.children.item(1).style.animation = "menu-open".concat(i.toString(), "label", " 0.4s linear 0s 1 normal");
             }
+            let menuIcon = document.getElementById("menuIcon");
+            menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
             setTimeout(() => {
                 setSiteMenuEnabled(true);
+                document.getElementById("menuIcon").style.animation = "menuIcon-expand 0.4s linear 0s 1 normal";
             }, 400);
         }
     }
@@ -81,9 +84,12 @@ function App() {
                 currentMenuItem.children.item(0).style.animation = "menu-close".concat(i.toString(), "icon", " 0.4s linear 0s 1 normal");
                 currentMenuItem.children.item(1).style.animation = "menu-close".concat(i.toString(), "label", " 0.4s linear 0s 1 normal");
             }
+            let menuIcon = document.getElementById("menuIcon");
+            menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
             setTimeout(() => {
                 element.style.display = "none";
                 setSiteMenuEnabled(false);
+                document.getElementById("menuIcon").style.animation = "menuIcon-expand 0.4s linear 0s 1 normal";
             }, 385);// time value is slightly lower than animation run time to avoid menu element flashing back into view for a second
         }
     }

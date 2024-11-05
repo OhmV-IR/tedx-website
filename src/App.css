@@ -416,3 +416,19 @@ h3 {
         display: none;
     }
 }
+@keyframes menuIcon-expand {
+    from{
+        transform: scale3D(0,0,0)
+    }
+    to{
+        transform: scale3D(1,1,1)
+    }
+}
+@keyframes menuIcon-shrink {
+    from{
+        transform: scale3D(1, 1, 1)
+    }
+    to{
+        transform: scale3D(0, 0, 0)
+    }
+}
