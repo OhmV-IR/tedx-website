@@ -97,7 +97,7 @@ h3 {
 
 @keyframes menu-open0label {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 11vh;
 
     }
@@ -110,7 +110,7 @@ h3 {
 
 @keyframes menu-open1label {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 20vh;
 
     }
@@ -123,7 +123,7 @@ h3 {
 
 @keyframes menu-open2label {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 29vh;
 
     }
@@ -136,7 +136,7 @@ h3 {
 
 @keyframes menu-open3label {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 38vh;
 
     }
@@ -149,7 +149,7 @@ h3 {
 
 @keyframes menu-open4label {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 47vh;
 
     }
@@ -162,7 +162,7 @@ h3 {
 
 @keyframes menu-open5label {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 56vh;
 
     }
@@ -175,7 +175,7 @@ h3 {
 
 @keyframes menu-open0icon {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 13.5vh;
 
     }
@@ -188,7 +188,7 @@ h3 {
 
 @keyframes menu-open1icon {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 22.5vh;
 
     }
@@ -201,7 +201,7 @@ h3 {
 
 @keyframes menu-open2icon {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 31.5vh;
 
     }
@@ -214,7 +214,7 @@ h3 {
 
 @keyframes menu-open3icon {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 40.5vh;
 
     }
@@ -228,7 +228,7 @@ h3 {
 @keyframes menu-open4icon {
     from {
         top: 49.5vh;
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
     }
 
     to {
@@ -239,7 +239,7 @@ h3 {
 
 @keyframes menu-open5icon {
     from {
-        transform: translateX(-5vw);
+        transform: translateX(-10vw);
         top: 58vh;
 
     }
@@ -247,5 +247,172 @@ h3 {
     to {
         transform: translateX(0);
         top: 58vh;
+    }
+}
+@keyframes menu-close0label {
+    from {
+        transform: translateX(0);
+        top: 11vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 11vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close1label {
+    from {
+        transform: translateX(0);
+        top: 20vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 20vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close2label {
+    from {
+        transform: translateX(0);
+        top: 29vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 29vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close3label {
+    from {
+        transform: translateX(0);
+        top: 38vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 38vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close4label {
+    from {
+        transform: translateX(0);
+        top: 47vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 47vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close5label {
+    from {
+        transform: translateX(0);
+        top: 56vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 56vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close0icon {
+    from {
+        transform: translateX(0);
+        top: 13.5vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 13.5vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close1icon {
+    from {
+        transform: translateX(0);
+        top: 22.5vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 22.5vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close2icon {
+    from {
+        transform: translateX(0);
+        top: 31.5vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 31.5vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close3icon {
+    from {
+        transform: translateX(0);
+        top: 40.5vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 40.5vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close4icon {
+    from {
+        top: 49.5vh;
+        transform: translateX(0);
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 49.5vh;
+        display: none;
+    }
+}
+
+@keyframes menu-close5icon {
+    from {
+        transform: translateX(0);
+        top: 58vh;
+        display: block;
+    }
+
+    to {
+        transform: translateX(-10vw);
+        top: 58vh;
+        display: none;
     }
 }
