@@ -84,7 +84,7 @@ function App() {
             setTimeout(() => {
                 element.style.display = "none";
                 setSiteMenuEnabled(false);
-            }, 395);// to avoid menu element flashing back into view for a second
+            }, 385);// time value is slightly lower than animation run time to avoid menu element flashing back into view for a second
         }
     }
 }
