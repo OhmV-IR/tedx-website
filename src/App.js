@@ -42,7 +42,7 @@ function App() {
                 </a>
                 <a href="/schedule">
                     <IconCalendarEvent id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
-                    <h3 id="scheduleLabel">Schedule</h3>
+                    <h3 id="scheduleLabel" onAnimationEnd={EndAnimationSiteMenu}>Schedule</h3>
                 </a>
             </div>
             <BrowserRouter>
@@ -70,10 +70,6 @@ function App() {
             }
             let menuIcon = document.getElementById("menuIcon");
             menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
-            setTimeout(() => {
-                setSiteMenuEnabled(true);
-                document.getElementById("menuIcon").style.animation = "menuIcon-expand 0.4s linear 0s 1 normal";
-            }, 400);
         }
     }
     function CloseSiteMenu() {
@@ -86,12 +82,14 @@ function App() {
             }
             let menuIcon = document.getElementById("menuIcon");
             menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
-            setTimeout(() => {
-                element.style.display = "none";
-                setSiteMenuEnabled(false);
-                document.getElementById("menuIcon").style.animation = "menuIcon-expand 0.4s linear 0s 1 normal";
-            }, 385);// time value is slightly lower than animation run time to avoid menu element flashing back into view for a second
         }
+    }
+    function EndAnimationSiteMenu(){
+        if(siteMenuEnabled){
+            document.getElementById("siteMenu").style.display = "none";
+        }
+        setSiteMenuEnabled(!siteMenuEnabled);
+        document.getElementById("menuIcon").style.animation = "menuIcon-expand 0.4s linear 0s 1 normal";
     }
 }
 export default App;
