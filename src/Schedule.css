@@ -1,0 +1,109 @@
+#card1 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 10vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card2 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 21vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card3 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 32vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card4 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 43vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card5 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 54vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card6 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 65vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card7 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 76vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card8 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 87vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card9 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 98vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+#card10 {
+    display: block;
+    position: absolute;
+    left: 15vw;
+    top: 109vh;
+    width: 83vw;
+    height: 10vh;
+    background-color: azure;
+}
+.schedule-event-name {
+    position: absolute;
+    color: #454545;
+    left: 20%;
+    top: 25%;
+}
+.schedule-event-time {
+    position: absolute;
+    color: grey;
+    top: 25%;
+    left: 80%;
+}
+.schedule-event-icon {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 95%;
+    width: 40%;
+}
