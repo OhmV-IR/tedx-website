@@ -2,7 +2,13 @@
     display: none;
     background-color: white;
 }
-
+#eventLogo {
+    display: block;
+    position: absolute;
+    top: -1.5vh;
+    left: 5vw;
+    width: 35vw;
+}
 #menuIcon {
     display: block;
     position: absolute;
