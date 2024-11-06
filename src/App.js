@@ -10,6 +10,7 @@ import Speakers from './Speakers';
 import PageNotFound from './PageNotFound';
 import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalendarEvent, IconUsers, IconMenu2, IconX } from "@tabler/icons-react";
 import './App.css';
+import '@tabler/core/dist/css/tabler.min.css';
 
 function App() {
     const [siteMenuEnabled, setSiteMenuEnabled] = useState(false)
