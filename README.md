@@ -1,3 +1,7 @@
+### Required downloads
+Latest version of nodejs. Can either download use a package manager like fnm or just download from the website(nodejs.org/en/download)
+
+
 ### Installing dependencies(MUST do BEFORE starting site)
 Navigate to the project directory in a command prompt and run `npm install`. This will install all the dependencies and this might take a few minutes.
 
