@@ -45,6 +45,9 @@ function App() {
                     <h3 id="scheduleLabel" onAnimationEnd={EndAnimationSiteMenu}>Schedule</h3>
                 </a>
             </div>
+            <a href="/">
+            <img src="/tedXLogo.png" id="eventLogo" alt="The logo of the event"></img>
+            </a>
             <BrowserRouter>
                 <Routes>
                     <Route exact path="/" element={<Homepage></Homepage>}></Route>
