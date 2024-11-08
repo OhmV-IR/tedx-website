@@ -5,7 +5,7 @@
     top: 10vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card2 {
     display: block;
@@ -14,7 +14,7 @@
     top: 21vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card3 {
     display: block;
@@ -23,7 +23,7 @@
     top: 32vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card4 {
     display: block;
@@ -32,7 +32,7 @@
     top: 43vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card5 {
     display: block;
@@ -41,7 +41,7 @@
     top: 54vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card6 {
     display: block;
@@ -50,7 +50,7 @@
     top: 65vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card7 {
     display: block;
@@ -59,7 +59,7 @@
     top: 76vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card8 {
     display: block;
@@ -68,7 +68,7 @@
     top: 87vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card9 {
     display: block;
@@ -77,7 +77,7 @@
     top: 98vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 #card10 {
     display: block;
@@ -86,7 +86,7 @@
     top: 109vh;
     width: 83vw;
     height: 10vh;
-    background-color: azure;
+    
 }
 .schedule-event-name {
     position: absolute;
@@ -105,5 +105,5 @@
     left: 0%;
     top: 0%;
     height: 95%;
-    width: 40%;
+    width: 15%;
 }
