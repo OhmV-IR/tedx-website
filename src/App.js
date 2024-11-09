@@ -9,12 +9,16 @@ import About from './About';
 import Speakers from './Speakers';
 import PageNotFound from './PageNotFound';
 import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalendarEvent, IconUsers, IconMenu2, IconX } from "@tabler/icons-react";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './App.css';
 
 function App() {
     const [siteMenuEnabled, setSiteMenuEnabled] = useState(false)
     return (
         <div id="approot">
+        <Analytics></Analytics>
+        <SpeedInsights></SpeedInsights>
             {siteMenuEnabled
                 ? <IconX stroke={2} size={44} id="menuIcon" onClick={CloseSiteMenu} color="#EB0028"></IconX>
                 : <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={OpenSiteMenu} color="#EB0028"></IconMenu2>

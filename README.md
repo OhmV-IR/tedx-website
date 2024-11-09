@@ -1,6 +1,11 @@
+### Viewing the site without hosting it yourself
+The site is hosted at tedx-website-nine.vercel.app for testing & design purposes but this is only available when I turn it on, so if you need to see the site send me a message.
+
+### Feature requests, bug reports
+To report bugs or request features, please create an issue and I will take a look. Please be as specific as possible.
+
 ### Required downloads
 Latest version of nodejs. Can either download use a package manager like fnm or just download from the website(nodejs.org/en/download)
-
 
 ### Installing dependencies(MUST do BEFORE starting site)
 Navigate to the project directory in a command prompt and run `npm install`. This will install all the dependencies and this might take a few minutes.
