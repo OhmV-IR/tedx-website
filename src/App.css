@@ -1,9 +1,9 @@
-body {
-    background-color: white !important;
-}
 #siteMenu {
     display: none;
-    background-color: white;
+    background-color: white !important;
+    z-index: 25;
+    height: 100vh;
+    width: 10vw;
 }
 #eventLogo {
     display: block;
@@ -11,84 +11,125 @@ body {
     top: -1.5vh;
     left: 5vw;
     width: 35vw;
+    z-index: 50;
 }
 #menuIcon {
     display: block;
     position: absolute;
     top: 0.5vh;
     left: 0.5vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #aboutIcon {
     position: absolute;
     top: 13.5vh;
     left: 1vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #mediaIcon {
     position: absolute;
     top: 22.5vh;
     left: 1vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #blogIcon {
     position: absolute;
     top: 31.5vh;
     left: 1vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #sponsorsIcon {
     position: absolute;
     top: 40.5vh;
     left: 1vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #speakersIcon {
     position: absolute;
     top: 49.5vh;
     left: 1vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #scheduleIcon {
     position: absolute;
     top: 58vh;
     left: 1vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #aboutLabel {
     position: absolute;
     top: 13.25vh;
     left: 4vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #mediaLabel {
     position: absolute;
     top: 22.25vh;
     left: 4vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #blogLabel {
     position: absolute;
     top: 31.25vh;
     left: 4vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #sponsorsLabel {
     position: absolute;
     top: 40.25vh;
     left: 4vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #speakersLabel {
     position: absolute;
     top: 49.25vh;
     left: 4vw;
+    background-color: white;
+    z-index: inherit;
 }
 
 #scheduleLabel {
     position: absolute;
     top: 58vh;
     left: 4vw;
+    background-color: white;
+    z-index: inherit;
+}
+#ourTeamIcon {
+    position: absolute;
+    left: 1vw;
+    top: 66.75vh;
+    background-color: white;
+    z-index: inherit;
+}
+#ourTeamLabel {
+    position: absolute;
+    left: 3.95vw;
+    top: 66.75vh;
+    background-color: white;
+    z-index: inherit;
 }
 
 a {
@@ -181,6 +222,16 @@ h3 {
         top: 58vh;
     }
 }
+@keyframes menu-open6label {
+    from{
+        transform: translateX(-10vw);
+        top: 66.75vh;
+    }
+    to{
+        transform: translateX(0);
+        top: 66.75vh;
+    }
+}
 
 @keyframes menu-open0icon {
     from {
@@ -256,6 +307,16 @@ h3 {
     to {
         transform: translateX(0);
         top: 58vh;
+    }
+}
+@keyframes menu-open6icon {
+    from{
+        transform: translateX(-10vw);
+        top: 66.75vh;
+    }
+    to {
+        transform: translateX(0);
+        top: 66.75vh;
     }
 }
 @keyframes menu-close0label {
@@ -338,6 +399,18 @@ h3 {
     to {
         transform: translateX(-10vw);
         top: 58vh;
+        display: none;
+    }
+}
+@keyframes menu-close6label {
+    from{
+        transform: translateX(0);
+        top: 66.75vh;
+        display: block;
+    }
+    to{
+        transform: translateX(-10vw);
+        top: 66.75vh;
         display: none;
     }
 }
@@ -425,6 +498,18 @@ h3 {
         display: none;
     }
 }
+@keyframes menu-close6icon {
+    from{
+        transform: translateX(0);
+        top: 66.75vh;
+        display: block;
+    }
+    to{
+        transform: translateX(-10vw);
+        top: 66.75vh;
+        display: block;
+    }
+}
 @keyframes menuIcon-expand {
     from{
         transform: scale3D(0,0,0)
@@ -440,4 +525,7 @@ h3 {
     to{
         transform: scale3D(0, 0, 0)
     }
+}
+img {
+    user-select: none;
 }
