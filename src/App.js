@@ -7,11 +7,13 @@ import Media from './Media';
 import Blog from './Blog';
 import About from './About';
 import Speakers from './Speakers';
+import OurTeam from './OurTeam';
 import PageNotFound from './PageNotFound';
-import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalendarEvent, IconUsers, IconMenu2, IconX } from "@tabler/icons-react";
+import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalendarEvent, IconUsers, IconMenu2, IconX, IconSpeakerphone } from "@tabler/icons-react";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import './App.css';
+import '@tabler/core/dist/css/tabler.min.css';
 
 function App() {
     const [siteMenuEnabled, setSiteMenuEnabled] = useState(false)
@@ -26,7 +28,7 @@ function App() {
             <div id="siteMenu">
                 <a href="/about">
                     <IconInfoSquare id="aboutIcon" color="#EB0028"></IconInfoSquare>
-                    <h3 id="aboutLabel">About</h3>
+                    <h3 id="aboutLabel">About TedX</h3>
                 </a>
                 <a href="/media">
                     <IconPhoto id="mediaIcon" color="#EB0028"></IconPhoto>
@@ -41,12 +43,16 @@ function App() {
                     <h3 id="sponsorsLabel">Sponsors</h3>
                 </a>
                 <a href="/speakers">
-                    <IconUsers id="speakersIcon" color="#EB0028"></IconUsers>
+                    <IconSpeakerphone id="speakersIcon" color="#EB0028"></IconSpeakerphone>
                     <h3 id="speakersLabel">Speakers</h3>
                 </a>
                 <a href="/schedule">
                     <IconCalendarEvent id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
-                    <h3 id="scheduleLabel" onAnimationEnd={EndAnimationSiteMenu}>Schedule</h3>
+                    <h3 id="scheduleLabel">Schedule</h3>
+                </a>
+                <a href="/ourteam">
+                    <IconUsers id="ourTeamIcon" color="#EB0028"></IconUsers>
+                    <h3 id="ourTeamLabel" onAnimationEnd={EndAnimationSiteMenu}>Our Team</h3>
                 </a>
             </div>
             <a href="/">
@@ -61,6 +67,7 @@ function App() {
                     <Route path="/blog" element={<Blog></Blog>}></Route>
                     <Route path="/about" element={<About></About>}></Route>
                     <Route path="/speakers" element={<Speakers></Speakers>}></Route>
+                    <Route path="/ourteam" element={<OurTeam></OurTeam>}></Route>
                     <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
                 </Routes>
             </BrowserRouter>

@@ -1,0 +1,75 @@
+#ourTeamRoot {
+    background-color: #080130 !important;
+    position: absolute;
+    left: 0vw;
+    top: 10vh;
+    width: 100vw;
+    height: 275vh;
+    z-index: -1;
+}
+#pageTitle {
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100%;
+    scale: 6;
+    width: 60vw;
+    height: 11vh;
+    color: white;
+    position: absolute;
+    left: 20vw;
+    top: 25vh;
+    text-align: center;
+}
+#teamPhotoDiya {
+    position: absolute;
+    left: 0vw;
+    top: -13vh;
+    scale: 0.5;
+}
+#teamPhotoUrvi {
+    position: absolute;
+    left: 40vw;
+    top: -13vh;
+    scale: 0.5;
+}
+#teamPhotoAdrien {
+    position: absolute;
+    left: 0vw;
+    top: 55vh;
+    scale: 0.5;
+}
+#teamPhotoStefan {
+    position: absolute;
+    left: 40vw;
+    top: 55vh;
+    scale: 0.5;
+}
+#teamPhotoAfeef {
+    position: absolute;
+    left: 0vw;
+    top: 123vh;
+    scale: 0.5;
+}
+#teamPhotoAlina {
+    position: absolute;
+    left: 40vw;
+    top: 123vh;
+    scale: 0.5;
+}
+#teamPhotoKunsh {
+    position: absolute;
+    left: 0vw;
+    top: 191vh;
+    scale: 0.5;
+}
+#teamPhotoJoydrutt {
+    position: absolute;
+    left: 40vw;
+    top: 191vh;
+    scale: 0.5;
+}
+* {
+    overflow-x: hidden !important;
+}
