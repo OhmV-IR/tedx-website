@@ -1,3 +1,6 @@
+body {
+    background-color: white !important;
+}
 #siteMenu {
     display: none;
     background-color: white !important;
