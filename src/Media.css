@@ -1,0 +1,14 @@
+#carousel {
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    left: 5vw;
+    top: 25vh;
+}
+#carousel-team-headshots {
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    left: 67.5vw;
+    top: 25vh;
+}
