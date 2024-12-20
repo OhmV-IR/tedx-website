@@ -1,0 +1,15 @@
+#carousel {
+    width: 70vw;
+    height: auto;
+    position: absolute;
+    left: 25vw;
+    top: 14vh;
+}
+#carouselHeader {
+    position: absolute;
+    width: 70vw;
+    left: 25vw;
+    top: 7vh;
+    text-align: center;
+    scale: 1.5
+}
