@@ -1,65 +1,65 @@
-#company1Card {
+#speaker1Card {
     position: absolute;
     left: 5vw;
     top: 10vh;
 }
-#company2Card {
+#speaker2Card {
     position: absolute;
     left: 35vw;
     top: 10vh;
 }
-#company3Card {
+#speaker3Card {
     position: absolute;
     left: 65vw;
     top: 10vh;
 }
-#company4Card {
+#speaker4Card {
     position: absolute;
     left: 5vw;
     top: 110vh;
 }
-#company5Card {
+#speaker5Card {
     position: absolute;
     left: 35vw;
     top: 110vh;
 }
-#company6Card {
+#speaker6Card {
     position: absolute;
     left: 65vw;
     top: 110vh;
 }
-#companyImg1 {
+#speakerImg1 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
-#companyImg2 {
+#speakerImg2 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
-#companyImg3 {
+#speakerImg3 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
-#companyImg4 {
+#speakerImg4 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
-#companyImg5 {
+#speakerImg5 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
-#companyImg6 {
+#speakerImg6 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
 .card-body {
     font-size: 150%;
     margin-top: -5%;
 }
-.companyCard {
+.speakerCard {
     overflow-y: hidden;
     width: 25vw;
 }
-.companySocialFooter {
+.speakerSocialFooter {
     position: relative;
     margin-top: -4vh;
     margin-bottom: 2vh;
 }
-.companySocialLink {
+.speakerSocialLink {
     position: relative;
     margin-left: 2.5vw;
 }
