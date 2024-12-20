@@ -1,0 +1,65 @@
+#speaker1Card {
+    position: absolute;
+    left: 5vw;
+    top: 10vh;
+}
+#speaker2Card {
+    position: absolute;
+    left: 35vw;
+    top: 10vh;
+}
+#speaker3Card {
+    position: absolute;
+    left: 65vw;
+    top: 10vh;
+}
+#speaker4Card {
+    position: absolute;
+    left: 5vw;
+    top: 110vh;
+}
+#speaker5Card {
+    position: absolute;
+    left: 35vw;
+    top: 110vh;
+}
+#speaker6Card {
+    position: absolute;
+    left: 65vw;
+    top: 110vh;
+}
+#speakerImg1 {
+    background-image: url("https://www.picsum.photos/1920/1080") !important;
+}
+#speakerImg2 {
+    background-image: url("https://www.picsum.photos/1920/1080") !important;
+}
+#speakerImg3 {
+    background-image: url("https://www.picsum.photos/1920/1080") !important;
+}
+#speakerImg4 {
+    background-image: url("https://www.picsum.photos/1920/1080") !important;
+}
+#speakerImg5 {
+    background-image: url("https://www.picsum.photos/1920/1080") !important;
+}
+#speakerImg6 {
+    background-image: url("https://www.picsum.photos/1920/1080") !important;
+}
+.card-body {
+    font-size: 150%;
+    margin-top: -5%;
+}
+.speakerCard {
+    overflow-y: hidden;
+    width: 25vw;
+}
+.speakerSocialFooter {
+    position: relative;
+    margin-top: -4vh;
+    margin-bottom: 2vh;
+}
+.speakerSocialLink {
+    position: relative;
+    margin-left: 2.5vw;
+}
