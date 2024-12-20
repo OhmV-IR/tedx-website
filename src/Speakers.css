@@ -1,33 +1,3 @@
-#speaker1Card {
-    position: absolute;
-    left: 5vw;
-    top: 10vh;
-}
-#speaker2Card {
-    position: absolute;
-    left: 35vw;
-    top: 10vh;
-}
-#speaker3Card {
-    position: absolute;
-    left: 65vw;
-    top: 10vh;
-}
-#speaker4Card {
-    position: absolute;
-    left: 5vw;
-    top: 110vh;
-}
-#speaker5Card {
-    position: absolute;
-    left: 35vw;
-    top: 110vh;
-}
-#speaker6Card {
-    position: absolute;
-    left: 65vw;
-    top: 110vh;
-}
 #speakerImg1 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
@@ -53,6 +23,10 @@
 .speakerCard {
     overflow-y: hidden;
     width: 25vw;
+    z-index: -5;
+    position: relative;
+    margin-left: 4vw;
+    margin-top: 10vh;
 }
 .speakerSocialFooter {
     position: relative;

@@ -1,33 +1,3 @@
-#company1Card {
-    position: absolute;
-    left: 5vw;
-    top: 10vh;
-}
-#company2Card {
-    position: absolute;
-    left: 35vw;
-    top: 10vh;
-}
-#company3Card {
-    position: absolute;
-    left: 65vw;
-    top: 10vh;
-}
-#company4Card {
-    position: absolute;
-    left: 5vw;
-    top: 90vh;
-}
-#company5Card {
-    position: absolute;
-    left: 35vw;
-    top: 90vh;
-}
-#company6Card {
-    position: absolute;
-    left: 65vw;
-    top: 90vh;
-}
 #companyImg1 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }
@@ -53,6 +23,10 @@
 .companyCard {
     overflow-y: hidden;
     width: 25vw;
+    z-index: -5;
+    position: relative;
+    margin-left: 3vw;
+    margin-top: 10vh;
 }
 .companySocialFooter {
     position: relative;
