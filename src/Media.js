@@ -2,6 +2,7 @@ import './Media.css'
 function Media() {
     return (
         <div id="mediaRoot">
+        <h1 id="carouselHeader">Event photos</h1>
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
