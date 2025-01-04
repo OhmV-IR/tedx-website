@@ -1,0 +1,13 @@
+#aboutTEDxHeader {
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    color: #eb2008;
+    font-size: xx-large;
+}
+#aboutTEDxText {
+    position: relative;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    width: 85vw;
+}
