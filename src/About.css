@@ -1,0 +1,32 @@
+#aboutTedXHeader {
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    color: #eb0028;
+    font-size: xx-large;
+}
+#aboutTedXText {
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    width: 85vw;
+}
+#aboutTedHeader {
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    color: #eb2008;
+    font-size: xx-large;
+}
+#aboutTedText {
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    width: 85vw;
+}
+.linkUnderline {
+    text-decoration: underline !important;
+    text-decoration-color: #eb2008 !important;
+    text-decoration-style: solid !important;
+    text-decoration-thickness: 2px !important;
+}
