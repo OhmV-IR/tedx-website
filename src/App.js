@@ -28,7 +28,7 @@ function App() {
             <div id="siteMenu">
                 <a href="/about">
                     <IconInfoSquare id="aboutIcon" color="#EB0028"></IconInfoSquare>
-                    <h3 id="aboutLabel">About TedX</h3>
+                    <h3 id="aboutLabel">About TED</h3>
                 </a>
                 <a href="/media">
                     <IconPhoto id="mediaIcon" color="#EB0028"></IconPhoto>
@@ -71,6 +71,9 @@ function App() {
                     <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
                 </Routes>
             </BrowserRouter>
+            <div id="footer">
+                <h2 className="text-center text-white">This independent TEDx event is operated under license from TED.</h2>
+            </div>
         </div>
     )
     function OpenSiteMenu() {
