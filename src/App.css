@@ -538,4 +538,19 @@ img {
     left: 0px;
     background-color: black;
     width: 100vw;
+    height: 10vh;
+}
+.linkUnderlineWhite {
+    text-decoration: underline !important;
+    text-decoration-color: white !important;
+    text-decoration-style: solid !important;
+    text-decoration-thickness: 2px !important;
+}
+#tedLicenseStatement {
+    position: relative;
+    margin-top: 1vh;
+}
+#tedXProgramLink {
+    position: relative;
+    margin-top: 1vh;
 }

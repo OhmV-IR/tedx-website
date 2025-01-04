@@ -72,7 +72,8 @@ function App() {
                 </Routes>
             </BrowserRouter>
             <div id="footer">
-                <h2 className="text-center text-white">This independent TEDx event is operated under license from TED.</h2>
+                <h3 id="tedLicenseStatement" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
+                <h3 id="tedXProgramLink" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
             </div>
         </div>
     )
