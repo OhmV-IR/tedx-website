@@ -1,0 +1,563 @@
+* {
+  overflow-x: hidden;
+}
+body {
+  background-color: white !important;
+}
+#siteMenu {
+  display: none;
+  background-color: white !important;
+  z-index: 25;
+  height: 100vh;
+  width: 10vw;
+}
+#eventLogo {
+  display: block;
+  position: absolute;
+  top: -1.5vh;
+  left: 5vw;
+  width: 35vw;
+  z-index: 50;
+}
+#menuIcon {
+  display: block;
+  position: absolute;
+  top: 0.5vh;
+  left: 0.5vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#aboutIcon {
+  position: absolute;
+  top: 13.5vh;
+  left: 1vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#mediaIcon {
+  position: absolute;
+  top: 22.5vh;
+  left: 1vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#blogIcon {
+  position: absolute;
+  top: 31.5vh;
+  left: 1vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#sponsorsIcon {
+  position: absolute;
+  top: 40.5vh;
+  left: 1vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#speakersIcon {
+  position: absolute;
+  top: 49.5vh;
+  left: 1vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#scheduleIcon {
+  position: absolute;
+  top: 58vh;
+  left: 1vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#aboutLabel {
+  position: absolute;
+  top: 13.25vh;
+  left: 4vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#mediaLabel {
+  position: absolute;
+  top: 22.25vh;
+  left: 4vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#blogLabel {
+  position: absolute;
+  top: 31.25vh;
+  left: 4vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#sponsorsLabel {
+  position: absolute;
+  top: 40.25vh;
+  left: 4vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#speakersLabel {
+  position: absolute;
+  top: 49.25vh;
+  left: 4vw;
+  background-color: white;
+  z-index: inherit;
+}
+
+#scheduleLabel {
+  position: absolute;
+  top: 58vh;
+  left: 4vw;
+  background-color: white;
+  z-index: inherit;
+}
+#ourTeamIcon {
+  position: absolute;
+  left: 1vw;
+  top: 66.75vh;
+  background-color: white;
+  z-index: inherit;
+}
+#ourTeamLabel {
+  position: absolute;
+  left: 3.95vw;
+  top: 66.75vh;
+  background-color: white;
+  z-index: inherit;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', 'sans-serif'
+}
+
+h3 {
+  user-select: none;
+}
+
+@keyframes menu-open0label {
+  from {
+      transform: translateX(-10vw);
+      top: 13.25vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 13.25vh;
+  }
+}
+
+@keyframes menu-open1label {
+  from {
+      transform: translateX(-10vw);
+      top: 22.25vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 22.25vh;
+  }
+}
+
+@keyframes menu-open2label {
+  from {
+      transform: translateX(-10vw);
+      top: 31.25vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 31.25vh;
+  }
+}
+
+@keyframes menu-open3label {
+  from {
+      transform: translateX(-10vw);
+      top: 40.25vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 40.25vh;
+  }
+}
+
+@keyframes menu-open4label {
+  from {
+      transform: translateX(-10vw);
+      top: 49.25vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 49.25vh;
+  }
+}
+
+@keyframes menu-open5label {
+  from {
+      transform: translateX(-10vw);
+      top: 58vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 58vh;
+  }
+}
+@keyframes menu-open6label {
+  from{
+      transform: translateX(-10vw);
+      top: 66.75vh;
+  }
+  to{
+      transform: translateX(0);
+      top: 66.75vh;
+  }
+}
+
+@keyframes menu-open0icon {
+  from {
+      transform: translateX(-10vw);
+      top: 13.5vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 13.5vh;
+  }
+}
+
+@keyframes menu-open1icon {
+  from {
+      transform: translateX(-10vw);
+      top: 22.5vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 22.5vh;
+  }
+}
+
+@keyframes menu-open2icon {
+  from {
+      transform: translateX(-10vw);
+      top: 31.5vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 31.5vh;
+  }
+}
+
+@keyframes menu-open3icon {
+  from {
+      transform: translateX(-10vw);
+      top: 40.5vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 40.5vh;
+  }
+}
+
+@keyframes menu-open4icon {
+  from {
+      top: 49.5vh;
+      transform: translateX(-10vw);
+  }
+
+  to {
+      transform: translateX(0);
+      top: 49.5vh;
+  }
+}
+
+@keyframes menu-open5icon {
+  from {
+      transform: translateX(-10vw);
+      top: 58vh;
+
+  }
+
+  to {
+      transform: translateX(0);
+      top: 58vh;
+  }
+}
+@keyframes menu-open6icon {
+  from{
+      transform: translateX(-10vw);
+      top: 66.75vh;
+  }
+  to {
+      transform: translateX(0);
+      top: 66.75vh;
+  }
+}
+@keyframes menu-close0label {
+  from {
+      transform: translateX(0);
+      top: 13.25vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 13.25vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close1label {
+  from {
+      transform: translateX(0);
+      top: 22.25vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 22.25vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close2label {
+  from {
+      transform: translateX(0);
+      top: 31.25vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 31.25vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close3label {
+  from {
+      transform: translateX(0);
+      top: 40.25vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 40.25vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close4label {
+  from {
+      transform: translateX(0);
+      top: 49.25vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 49.25vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close5label {
+  from {
+      transform: translateX(0);
+      top: 58vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 58vh;
+      display: none;
+  }
+}
+@keyframes menu-close6label {
+  from{
+      transform: translateX(0);
+      top: 66.75vh;
+      display: block;
+  }
+  to{
+      transform: translateX(-10vw);
+      top: 66.75vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close0icon {
+  from {
+      transform: translateX(0);
+      top: 13.5vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 13.5vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close1icon {
+  from {
+      transform: translateX(0);
+      top: 22.5vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 22.5vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close2icon {
+  from {
+      transform: translateX(0);
+      top: 31.5vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 31.5vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close3icon {
+  from {
+      transform: translateX(0);
+      top: 40.5vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 40.5vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close4icon {
+  from {
+      top: 49.5vh;
+      transform: translateX(0);
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 49.5vh;
+      display: none;
+  }
+}
+
+@keyframes menu-close5icon {
+  from {
+      transform: translateX(0);
+      top: 58vh;
+      display: block;
+  }
+
+  to {
+      transform: translateX(-10vw);
+      top: 58vh;
+      display: none;
+  }
+}
+@keyframes menu-close6icon {
+  from{
+      transform: translateX(0);
+      top: 66.75vh;
+      display: block;
+  }
+  to{
+      transform: translateX(-10vw);
+      top: 66.75vh;
+      display: block;
+  }
+}
+@keyframes menuIcon-expand {
+  from{
+      transform: scale3D(0,0,0)
+  }
+  to{
+      transform: scale3D(1,1,1)
+  }
+}
+@keyframes menuIcon-shrink {
+  from{
+      transform: scale3D(1, 1, 1)
+  }
+  to{
+      transform: scale3D(0, 0, 0)
+  }
+}
+img {
+  user-select: none;
+}
+#footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+}
+.footerPad {
+  position: relative;
+  margin-bottom: 0px;
+  height: 20vh;
+}
+.linkUnderlineWhite {
+  text-decoration: underline !important;
+  text-decoration-color: white !important;
+  text-decoration-style: solid !important;
+  text-decoration-thickness: 2px !important;
+}
+#tedLicenseStatement {
+  position: relative;
+  margin-top: 1vh;
+}
+#tedXProgramLink {
+  position: relative;
+  margin-top: 1vh;
+}
