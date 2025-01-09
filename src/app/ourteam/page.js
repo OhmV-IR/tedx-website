@@ -1,15 +1,22 @@
 "use client"
-export default function Page(){
-    return(
+export default function Page() {
+    return (
         <div id="ourTeamRoot">
-        <style jsx>{`#ourTeamRoot {
+            <link rel="stylesheet" href="/tabler.min.css"></link>
+            <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
+            <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"></link>
+            <style jsx>{`#ourTeamRoot {
     background-color: #080130 !important;
     position: absolute;
     left: 0vw;
     top: 10vh;
     width: 100vw;
-    height: 275vh;
+    height: 225vh;
     z-index: -1;
+}
+img {
+overflow-y: hidden;
 }
 #pageTitle {
     font-family: "League Spartan", serif;
@@ -26,66 +33,52 @@ export default function Page(){
     top: 25vh;
     text-align: center;
 }
-#teamPhotoDiya {
-    position: absolute;
-    left: 0vw;
-    top: -13vh;
-    scale: 0.5;
-}
-#teamPhotoUrvi {
-    position: absolute;
-    left: 40vw;
-    top: -13vh;
-    scale: 0.5;
-}
 #teamPhotoAdrien {
     position: absolute;
     left: 0vw;
-    top: 55vh;
+    top: -14vh;
     scale: 0.5;
 }
-#teamPhotoStefan {
+#teamPhotoDiya {
     position: absolute;
     left: 40vw;
-    top: 55vh;
+    top: -14vh;
     scale: 0.5;
 }
 #teamPhotoAfeef {
     position: absolute;
     left: 0vw;
-    top: 123vh;
+    top: 55vh;
     scale: 0.5;
 }
 #teamPhotoAlina {
     position: absolute;
     left: 40vw;
-    top: 123vh;
+    top: 55vh;
     scale: 0.5;
 }
 #teamPhotoKunsh {
     position: absolute;
     left: 0vw;
-    top: 191vh;
+    top: 123vh;
     scale: 0.5;
 }
 #teamPhotoJoydrutt {
     position: absolute;
     left: 40vw;
-    top: 191vh;
+    top: 123vh;
     scale: 0.5;
 }
 * {
     overflow-x: hidden !important;
 }`}</style>
-        <h1 id="pageTitle">MEET THE TEAM</h1>
-        <img id="teamPhotoDiya" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
-        <img id="teamPhotoUrvi" src="/meetTheTeamUrvi.png" alt="Urvi Budhiraja, Co-organizer of the event"></img>
-        <img id="teamPhotoAdrien" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
-        <img id="teamPhotoStefan" src="/meetTheTeamStefan.png" alt="Stefan Bukvic, Lead designer of the event"></img>
-        <img id="teamPhotoAfeef" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
-        <img id="teamPhotoAlina" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
-        <img id="teamPhotoKunsh" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
-        <img id="teamPhotoJoydrutt" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
+            <h1 id="pageTitle">MEET THE TEAM</h1>
+            <img id="teamPhotoDiya" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
+            =        <img id="teamPhotoAdrien" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
+            <img id="teamPhotoAfeef" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
+            <img id="teamPhotoAlina" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
+            <img id="teamPhotoKunsh" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
+            <img id="teamPhotoJoydrutt" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
         </div>
     )
 }
