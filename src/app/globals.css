@@ -541,6 +541,7 @@ img {
   background-color: black;
   width: 100vw;
   height: 10vh;
+  overflow-y: hidden;
 }
 .footerPad {
   position: relative;
