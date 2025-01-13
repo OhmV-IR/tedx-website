@@ -1,11 +1,28 @@
 'use client'
+import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, IconHeartRateMonitor } from '@tabler/icons-react';
+import { useEffect, useState } from 'react';
 function Homepage() {
+  function SetLargeIconSize() {
+    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    let iconsize = (0.25 * vw).toString();
+    var icons = document.getElementsByClassName("largeIcon");
+    for(var i = 0; i < icons.length; i++){
+      icons[i].setAttribute("width", iconsize);
+      icons[i].setAttribute("height", iconsize);
+    }
+  }
+  useEffect(() => {
+    SetLargeIconSize();
+  });
   return (
     <div id="homepage-root">
-    <style jsx>{`
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW&display=swap" rel="stylesheet"></link>
+      <style jsx>{`
     #aboutTEDxHeader {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 30vh;
     margin-left: 5vw;
     color: #eb2008;
     font-size: xx-large;
@@ -16,17 +33,110 @@ function Homepage() {
     margin-left: 5vw;
     width: 85vw;
 }
+#ctaButton {
+    position: relative;
+    align: center;
+    width: 100vw;
+    margin-top: 23vh;
+}
+.widerButton {
+  width: 35vw;
+}
+button {
+position: relative;
+margin-left: 1.5vw;
+margin-top: 5vh;
+}
+#sloganText {
+  position: relative;
+  margin-left: 10vw;
+  margin-top: 40vh;
+  width: 50vw;
+  height: 10vh;
+  text-align: center;
+  font-family: "Playwrite AU NSW", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  scale: 5;
+}
+#iconCarousel {
+  position: absolute;
+  left: 68vw;
+  top: 7vh;
+  height: 75vh;
+  width: 50vw;
+  z-index: -1;
+}
+#iconCarouselBackground {
+  position: absolute;
+  left: 0vw;
+  top: 0vh;
+  height: 75vh;
+  width: 100vw;
+  z-index: -2;
+}
+h1 {
+  overflow-y: hidden;
+}
+.largeIcon {
+  z-index: -1;
+}
     `}</style>
+      <h1 id="sloganText">Power of us</h1>
+      <img id="iconCarouselBackground" src="/16x9Background.png"></img>
+      <div id="iconCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div className="carousel-indicators visually-hidden">
+          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="0" className="active"></button>
+          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="5"></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <IconUsersGroup className="largeIcon" ></IconUsersGroup>
+          </div>
+          <div className="carousel-item">
+            <IconLeaf className="largeIcon" ></IconLeaf>
+          </div>
+          <div className="carousel-item">
+            <IconCoinEuro className="largeIcon" ></IconCoinEuro>
+          </div>
+          <div className="carousel-item">
+            <IconWorld className="largeIcon" ></IconWorld>
+          </div>
+          <div className="carousel-item">
+            <IconFirstAidKit className="largeIcon" ></IconFirstAidKit>
+          </div>
+          <div className="carousel-item">
+            <IconHeartRateMonitor className="largeIcon" ></IconHeartRateMonitor>
+          </div>
+          <a className="carousel-control-prev visually-hidden" data-bs-target="#iconCarousel" role="button" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </a>
+          <a className="carousel-control-next visually-hidden" data-bs-target="#iconCarousel" role="button" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+      <center><div id="ctaButton">
+        <button type="button" className="btn btn-danger widerButton">Get tickets now!</button>
+        <button type="button" className="btn btn-outline-danger widerButton">Sign up for mailing list</button>
+      </div></center>
       <div id="about-small">
         <strong><h1 id="aboutTEDxHeader">
           What is TEDx?
         </h1></strong>
         <h3 id="aboutTEDxText">
-        In the spirit of ideas worth spreading, TED has created a program called TEDx. 
-        TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxCentreville Chicopee Youth
-        , where x = independently organized TED event. 
-        At our TEDxCentreville Chicopee Youth event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group. 
-        The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
+          In the spirit of ideas worth spreading, TED has created a program called TEDx.
+          TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxCentreville Chicopee Youth
+          , where x = independently organized TED event.
+          At our TEDxCentreville Chicopee Youth event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group.
+          The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
         </h3>
       </div>
     </div>
