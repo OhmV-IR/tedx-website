@@ -22,7 +22,7 @@ function Homepage() {
       <style jsx>{`
     #aboutTEDxHeader {
     position: relative;
-    margin-top: 30vh;
+    margin-top: 10vh;
     margin-left: 5vw;
     color: #eb2008;
     font-size: xx-large;
