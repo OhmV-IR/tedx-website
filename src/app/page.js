@@ -17,7 +17,7 @@ function Homepage() {
   }
   function OnEmailTextChange(evt){
     setEmailInputValue(evt.target.value);
-    if(evt.target.value.match("[a-z, 0-9,].*\@[a-z, 0-9,].*\..*")){
+    if(evt.target.value.match("[a-z0-9].*\@[a-z0-9].*\..*")){
       document.getElementById("formEmail").classList.remove("border-danger");
       document.getElementById("formEmail").classList.add("border-success");
       document.getElementById("formEmailSubmit").disabled = false;
