@@ -1,18 +1,37 @@
 'use client'
-import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, IconHeartRateMonitor } from '@tabler/icons-react';
+import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, IconHeartRateMonitor, IconMail } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
 function Homepage() {
+  const [emailInputValue, setEmailInputValue] = useState("");
   function SetLargeIconSize() {
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     let iconsize = (0.25 * vw).toString();
     var icons = document.getElementsByClassName("largeIcon");
-    for(var i = 0; i < icons.length; i++){
+    for (var i = 0; i < icons.length; i++) {
       icons[i].setAttribute("width", iconsize);
       icons[i].setAttribute("height", iconsize);
     }
   }
+  function OnEmailSubmit(){
+    console.log("submitted email: " + emailInputValue);
+  }
+  function OnEmailTextChange(evt){
+    setEmailInputValue(evt.target.value);
+    if(evt.target.value.match("[a-z, 0-9,].*\@[a-z, 0-9,].*\..*")){
+      document.getElementById("formEmail").classList.remove("border-danger");
+      document.getElementById("formEmail").classList.add("border-success");
+      document.getElementById("formEmailSubmit").disabled = false;
+    }
+    else{
+      document.getElementById("formEmail").classList.remove("border-success")
+      document.getElementById("formEmail").classList.add("border-danger");
+      document.getElementById("formEmailSubmit").disabled = true;
+    }
+  }
   useEffect(() => {
     SetLargeIconSize();
+    document.getElementById("formEmail").onchange = OnEmailTextChange;
+    document.getElementById("formEmailSubmit").onclick = OnEmailSubmit;
   });
   return (
     <div id="homepage-root">
@@ -125,8 +144,28 @@ h1 {
       </div>
       <center><div id="ctaButton">
         <button type="button" className="btn btn-danger widerButton">Get tickets now!</button>
-        <button type="button" className="btn btn-outline-danger widerButton">Sign up for mailing list</button>
+        <button type="button" className="btn btn-outline-danger widerButton" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
       </div></center>
+      <div className="modal fade" id="emailSubmissionModal" tabIndex="-1">
+        <div className="modal-dialog modal-xl" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Mailing list signup</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className="mb-3">
+                <label className="form-label">Email</label>
+                <input type="text" className="form-control" name="emailTextInput" placeholder="something@example.com" id="formEmail" />
+              </div>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" className="btn btn-primary align-right" data-bs-dismiss="modal" id="formEmailSubmit" disabled={true}>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="about-small">
         <strong><h1 id="aboutTEDxHeader">
           What is TEDx?
