@@ -28,7 +28,7 @@ body {
   position: absolute;
   top: 0.5vh;
   left: 0.5vw;
-  background-color: white;
+  background-color: transparent;
   z-index: inherit;
 }
 .menuElement {

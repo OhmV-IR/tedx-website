@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
                     <Analytics></Analytics>
                     <SpeedInsights></SpeedInsights>
                     <link rel="stylesheet" href="/tabler.min.css"></link>
+                    <script src="/tabler.min.js"></script>
                     {siteMenuEnabled
                         ? <IconX stroke={2} size={44} id="menuIcon" onClick={CloseSiteMenu} color="#EB0028"></IconX>
                         : <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={OpenSiteMenu} color="#EB0028"></IconMenu2>
