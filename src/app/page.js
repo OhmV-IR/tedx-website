@@ -172,7 +172,7 @@ h1 {
         </div>
       </div>
       <center><div id="ctaButton">
-        <button type="button" className="btn btn-danger widerButton">Get tickets now!</button>
+        <a href="#"><button type="button" className="btn btn-danger widerButton">Get tickets now!</button></a>
         <button type="button" className="btn btn-outline-danger widerButton" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
       </div></center>
       <div className="modal fade" id="emailSubmissionModal" tabIndex="-1">
