@@ -14,8 +14,12 @@ function Homepage() {
     }
   }
   function OnEmailSubmit(){
+    const requestOptions = {
+      method: "POST",
+      redirect: "follow"
+    };
     console.log("submitted email: " + emailInputValue);
-    fetch("/api/writeEmail?email=" + emailInputValue).then((res) => {
+    fetch("/api/writeEmail?email=" + emailInputValue, requestOptions).then((res) => {
       if(res.status == 200){
         console.log("Email submitted successfully");
         document.getElementById("successAlert").style.display = "block";
