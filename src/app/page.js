@@ -29,9 +29,9 @@ function Homepage() {
       }
       else{
         console.error("Email submission failed");
-        document.getElementById("dangerAlert").style.display = "block";
+        document.getElementById("failedAlert").style.display = "block";
         setTimeout(() => {
-          document.getElementById("dangerAlert").style.display = "none";
+          document.getElementById("failedAlert").style.display = "none";
         }, bannerDisplayTime);
       }
     })
