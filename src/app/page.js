@@ -3,6 +3,7 @@ import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, Ico
 import { useEffect, useState } from 'react';
 function Homepage() {
   const [emailInputValue, setEmailInputValue] = useState("");
+  const bannerDisplayTime = 4000; // in ms
   function SetLargeIconSize() {
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     let iconsize = (0.25 * vw).toString();
@@ -14,6 +15,22 @@ function Homepage() {
   }
   function OnEmailSubmit(){
     console.log("submitted email: " + emailInputValue);
+    fetch("/api/writeEmail?email=" + emailInputValue).then((res) => {
+      if(res.status == 200){
+        console.log("Email submitted successfully");
+        document.getElementById("successAlert").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("successAlert").style.display = "none";
+        }, bannerDisplayTime);
+      }
+      else{
+        console.error("Email submission failed");
+        document.getElementById("dangerAlert").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("dangerAlert").style.display = "none";
+        }, bannerDisplayTime);
+      }
+    })
   }
   function OnEmailTextChange(evt){
     setEmailInputValue(evt.target.value);
@@ -101,7 +118,15 @@ h1 {
 .largeIcon {
   z-index: -1;
 }
+#successAlert {
+  display: none;
+}
+#failedAlert {
+  display: none;
+}
     `}</style>
+    <div id="successAlert" className="alert alert-success" role="alert">Mailing list signup successful!</div>
+    <div id="failedAlert" className="alert alert-danger" role="alert">Mailing list signup failed!</div> 
       <h1 id="sloganText">Power of us</h1>
       <img id="iconCarouselBackground" src="/16x9Background.png"></img>
       <div id="iconCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
