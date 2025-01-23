@@ -2,7 +2,7 @@
 import { IconWorldWww, IconBrandInstagram, IconBrandFacebook, IconBrandYoutube, IconBrandX, IconBrandTiktok } from "@tabler/icons-react";
 export default function Page() {
     return (
-        <div>
+        <div className="divRoot">
         <style jsx>{`#speakerImg1 {
     background-image: url("https://www.picsum.photos/1920/1080") !important;
 }

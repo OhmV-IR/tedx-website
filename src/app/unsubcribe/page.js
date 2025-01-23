@@ -45,7 +45,7 @@ export default function UnsubcribeForm() {
     document.getElementById("formEmailSubmit").onclick = OnEmailSubmit;
   });
   return (
-    <div id="unsubscribeRoot">
+    <div className="divRoot">
       <style jsx>{`
         #successAlert {
             display: none;

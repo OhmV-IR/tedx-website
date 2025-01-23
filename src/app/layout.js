@@ -69,11 +69,12 @@ export default function RootLayout({ children }) {
                         </a>
                     </div>
                     {children}
-                    <div className="footerPad"></div>
-                    <div id="footer" tabIndex="50">
-                        <h3 id="tedLicenseStatement" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
-                        <h3 id="tedXProgramLink" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
-                    </div>
+                    {siteMenuEnabled
+                    ?<div></div>
+                    :<><div className="footerPad"></div><div id="footer" tabIndex="50">
+                            <h3 id="tedLicenseStatement" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
+                            <h3 id="tedXProgramLink" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
+                        </div></>}
                 </div>
             </body>
         </html>
@@ -90,6 +91,10 @@ export default function RootLayout({ children }) {
             }
             let menuIcon = document.getElementById("menuIcon");
             menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
+            let roots = document.getElementsByClassName("divRoot");
+            for(let i = 0; i < roots.length; i++){
+                roots[i].classList.add('hide');
+            }
         }
     }
     function CloseSiteMenu() {
@@ -103,6 +108,10 @@ export default function RootLayout({ children }) {
             }
             let menuIcon = document.getElementById("menuIcon");
             menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
+            let roots = document.getElementsByClassName("divRoot");
+            for(let i = 0; i < roots.length; i++){
+                roots[i].classList.remove('hide');
+            }
         }
     }
     function EndAnimationSiteMenu() {

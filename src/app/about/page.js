@@ -1,7 +1,7 @@
 "use client"
 export default function Page() {
     return (
-        <div id="aboutRoot">
+        <div className="divRoot">
         <style jsx>{`
         #aboutTedXHeader {
     position: relative;

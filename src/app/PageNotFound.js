@@ -1,7 +1,7 @@
 "use client"
 function PageNotFound(){
     return(
-        <h1>Error 404</h1>
+        <div className="divRoot"><h1>Error 404 not found</h1></div>
     )
 }
 export default PageNotFound;
