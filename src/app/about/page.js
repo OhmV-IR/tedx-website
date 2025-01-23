@@ -1,8 +1,8 @@
 "use client"
 export default function Page() {
     return (
-        <div id="aboutRoot">
-            <style jsx>{`
+        <div className="divRoot">
+        <style jsx>{`
         #aboutTedXHeader {
     position: relative;
     margin-left: 5vw;

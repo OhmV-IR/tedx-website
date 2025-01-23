@@ -1,7 +1,7 @@
 "use client"
 export default function Page() {
     return (
-        <div id="ourTeamRoot">
+        <div className="divRoot">
             <link rel="stylesheet" href="/tabler.min.css"></link>
             <link rel="preconnect" href="https://fonts.googleapis.com"></link>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>

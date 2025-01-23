@@ -1,7 +1,7 @@
 "use client"
 export default function Page() {
     return (
-        <div>
+        <div className="divRoot">
         <style jsx>{
             `
             #card1 {

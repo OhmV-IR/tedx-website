@@ -1,7 +1,7 @@
 "use client"
 export default function Page() {
     return (
-        <div id="mediaRoot">
+        <div className="divRoot">
         <style jsx>{`#carousel {
     width: 70vw;
     height: auto;

@@ -1,6 +1,6 @@
 "use client"
 export default function Page(){
     return (
-        <h1>Blog</h1>
+        <div className="divRoot"><h1>Blog</h1></div>
     )
 }
