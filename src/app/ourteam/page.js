@@ -37,11 +37,52 @@ overflow-y: hidden;
 #firstMeetTeamPhotoMobile {
     margin-top: 40vh;
 }
+#pageTitleMobile {
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60%;
+    scale: 6;
+    width: 60vw;
+    height: 11vh;
+    color: white;
+    position: absolute;
+    left: 20vw;
+    top: 40vh;
+    text-align: center;
+}
+#firstMeetTeamPhotoMobile {
+    margin-top: 40vh;
+}
 .meetTeamPhotoMobile {
     position: relative;
     margin-top: 10vh;
     margin-left: 0vw;
     width: 100vw;
+}
+#pageTitle {
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100%;
+    scale: 6;
+    width: 60vw;
+    height: 11vh;
+    color: white;
+    position: absolute;
+    left: 20vw;
+    top: 40vh;
+    text-align: center;
+}
+.meetTeamPhoto {
+    position: relative;
+    margin-top: 40vh;
+    margin-left: 4vw;
+}
+#firstmeetTeamPhoto {
+    margin-top: 40vh;
 }
 #background {
     background-color: #080130;
