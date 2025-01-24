@@ -1,11 +1,17 @@
 'use client'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalendarEvent, IconUsers, IconMenu2, IconX, IconSpeakerphone, IconHome } from "@tabler/icons-react";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import './globals.css';
+const mobile = require('is-mobile');
+
 export default function RootLayout({ children }) {
     const [siteMenuEnabled, setSiteMenuEnabled] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
+    useEffect(() => {
+        setIsMobile(mobile())
+    })
     return (
         <html>
             <body>
