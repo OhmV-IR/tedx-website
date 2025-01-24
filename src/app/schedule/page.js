@@ -5,7 +5,7 @@ const mobile = require('is-mobile');
 export default function Page() {
     const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
-        setIsMobile(true)
+        setIsMobile(mobile())
         var icsDownloads = document.getElementsByClassName('icsDownloadButton')
         for (let i = 0; i < icsDownloads.length; i++) {
             icsDownloads[i].addEventListener("click", (evt) => {
