@@ -1,9 +1,23 @@
 "use client"
+
+import { useEffect } from "react";
 export default function Page() {
+    useEffect(() => {
+        var icsDownloads = document.getElementsByClassName('icsDownloadButton')
+        for(let i = 0; i < icsDownloads.length; i++){
+            icsDownloads[i].addEventListener("click", (evt) => {
+                console.log("test")
+                const link = document.createElement("a");
+                link.href = "/api/downloadEvent?eventId=" + evt.target.id
+                link.download = "tedxevent.ics"
+                link.click()
+            })
+        }
+    })
     return (
         <div className="divRoot">
-        <style jsx>{
-            `
+            <style jsx>{
+                `
             #card1 {
             margin-top: 10vh !important;
             }
@@ -63,6 +77,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event1" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -88,6 +103,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event2" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -113,6 +129,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event3" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -138,6 +155,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event4" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -163,6 +181,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event5" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -188,6 +207,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event6" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -213,6 +233,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event7" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -237,7 +258,8 @@ export default function Page() {
                                 This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.
                             </div>
                             <div className="modal-footer">
-                                <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" className="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event8" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -263,6 +285,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event9" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -288,6 +311,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
+                                <button type="button" id="event10" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
