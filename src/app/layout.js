@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
     const [siteMenuEnabled, setSiteMenuEnabled] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
     useEffect(() => {
-        alert(mobile())
         setIsMobile(mobile())
     }) // site menu open/close icons don't want to click
     return (
