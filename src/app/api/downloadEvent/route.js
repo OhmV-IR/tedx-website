@@ -23,30 +23,10 @@ const eventMap = Map(
 
 export async function GET(request){
     var eventId = request.nextUrl.searchParams.get('eventId');
-    switch(eventId){
-        case "event1":
-            return new Response(event1, {status: 200});
-        case "event2":
-            return new Response(event2, {status: 200});
-        case "event3":
-            return new Response(event3, {status: 200});
-        case "event4":
-            return new Response(event4, {status: 200});
-        case "event5":
-            return new Response(event5, {status: 200})
-        case "event6":
-            return new Response(event6, {status: 200})
-        case "event7":
-            return new Response(event7, {status: 200});
-        case "event8":
-            return new Response(event8, {status: 200});
-        case "event9":
-            return new Response(event9, {status: 200});
-        case "event10":
-            return new Response(event10, {status: 200});
-        default:
-            return new Response("Event not found!", {status: 400});
+    if(await eventMap.has(eventId)){
+        return new Response(eventMap[eventId], {status: 200})
     }
+    return new Response("Event not found", {status: 400});
 }
 
 function createIcsFile(startDate, endDate, title, url, location, description){
