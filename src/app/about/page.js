@@ -1,13 +1,5 @@
 "use client"
-import { useEffect, useState } from 'react'
-
-const mobile = require('is-mobile')
-
 export default function Page() {
-    const [isMobile, setIsMobile] = useState(false)
-    useEffect(() => {
-        setIsMobile(mobile())
-    })
     return (
         <div className="divRoot">
         <style jsx>{`
