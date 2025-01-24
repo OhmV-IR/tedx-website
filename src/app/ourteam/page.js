@@ -19,7 +19,7 @@ export default function Page() {
 img {
 overflow-y: hidden;
 }
-#pageTitle {
+#pageTitleMobile {
     font-family: "League Spartan", serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -34,11 +34,14 @@ overflow-y: hidden;
     top: 40vh;
     text-align: center;
 }
-.meetTeamPhoto {
-    position: relative;
+#firstMeetTeamPhotoMobile {
     margin-top: 40vh;
-    margin-left: 25vw;
-    width: 50vw;
+}
+.meetTeamPhotoMobile {
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 0vw;
+    width: 100vw;
 }
 #background {
     background-color: #080130;
@@ -48,24 +51,24 @@ overflow-y: hidden;
 }`}</style>
             {isMobile
                 ? <><div id="background" tabIndex={-25}>
-                    <h1 id="pageTitle" tabIndex={-10}>MEET THE TEAM</h1>
+                    <h1 id="pageTitleMobile" tabIndex={-10}>MEET THE TEAM</h1>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
+                        <img id="firstMeetTeamPhotoMobile" className="meetTeamPhotoMobile" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
                     </div>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
+                        <img className="meetTeamPhotoMobile" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
                     </div>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
+                        <img className="meetTeamPhotoMobile" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
                     </div>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
+                        <img className="meetTeamPhotoMobile" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
                     </div>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
+                        <img className="meetTeamPhotoMobile" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
                     </div>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
+                        <img className="meetTeamPhotoMobile" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
                     </div>
                 </div></>
 
@@ -75,7 +78,7 @@ overflow-y: hidden;
                 : <>            <div id="background" tabIndex={-25}>
                     <h1 id="pageTitle" tabIndex={-10}>MEET THE TEAM</h1>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
+                        <img id="firstMeetTeamPhoto" className="meetTeamPhoto" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
                         <img className="meetTeamPhoto" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
                     </div>
                     <div className="d-flex align-self-center">
