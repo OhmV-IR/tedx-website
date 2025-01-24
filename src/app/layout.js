@@ -37,12 +37,6 @@ export default function RootLayout({ children }) {
                                 <h3 className="menuLabel" id="mediaLabel">Media</h3>
                             </div>
                         </a>
-                        <a href="/blog">
-                            <div className="menuElement">
-                                <IconNotebook className="menuIcon" id="blogIcon" color="#EB0028"></IconNotebook>
-                                <h3 className="menuLabel" id="blogLabel">Blog</h3>
-                            </div>
-                        </a>
                         <a href="/sponsors">
                             <div className="menuElement">
                                 <IconCurrencyDollar className="menuIcon" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
