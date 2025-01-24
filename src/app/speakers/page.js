@@ -56,7 +56,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="card-body">
-                            Here lies a blurb about the speaker, maybe where they work, what they've done or any other information that would be cool to know.
+                        Through my experiences as an activist, author, and humanitarian, I’ve learned the importance of uplifting others and creating opportunities for growth and transformation.
                         </div>
                         <div className="d-flex align-self-center">
                             <a href="https://instagram.com/tannerbergsma" className="socialLinkLeftSide"><IconBrandInstagram></IconBrandInstagram></a>
@@ -75,7 +75,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="card-body">
-                            Here lies a blurb about the speaker, maybe where they work, what they've done or any other information that would be cool to know.
+                        I want to empower young minds to see that they too have the potential to bring light to someone else's story, to take risks for the greater good, and to inspire others through their actions.
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://www.linkedin.com/in/mona-abu-nameh-31a55319?trk=feed-detail_main-feed-card_feed-actor-image" className="speakerSocialLink linkPos3"><IconBrandLinkedin></IconBrandLinkedin></a>
@@ -92,7 +92,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="card-body">
-                            Here lies a blurb about the speaker, maybe where they work, what they've done or any other information that would be cool to know.
+                        Need a short blurb about speaker here
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://taylorconsultinggroup.org/"><IconWorldWww></IconWorldWww></a>
@@ -111,7 +111,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="card-body">
-                            Here lies a blurb about the speaker, maybe where they work, what they've done or any other information that would be cool to know.
+                        As a deeply motivated professional toiling for over 25 years to this end, I seek opportunities to share and learn with those looking to hear, challenge and aspire to shepherd the next era, the 5th Industrial Revolution known as the Decarbonization of Everything (the "DoE").  
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://ca.linkedin.com/in/nelson-a-switzer-88b944b"><IconBrandLinkedin></IconBrandLinkedin></a>
@@ -128,7 +128,8 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="card-body">
-                            Here lies a blurb about the speaker, maybe where they work, what they've done or any other information that would be cool to know.
+                        
+I want to share my journey, insight, and lessons learned with an aim to motivate and empower everyone towards their passion and dreams. I want to start meaningful conversations, inspire creativity, and encourage continuous learning and growth.
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://www.linkedin.com/in/maks-turchenko-ba99521a2/"><IconBrandLinkedin></IconBrandLinkedin></a>
@@ -145,7 +146,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="card-body">
-                            Here lies a blurb about the speaker, maybe where they work, what they've done or any other information that would be cool to know.
+                        Short blurb about speaker here
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://www.instagram.com/kaitlyn.hdsb/" className="socialLinkLeftSide"><IconBrandInstagram></IconBrandInstagram></a>
