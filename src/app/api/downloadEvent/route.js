@@ -8,23 +8,24 @@ const event7 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 
 const event8 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
 const event9 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
 const event10 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
-const eventMap = Map(
-    {"event1": event1},
-    {"event2": event2},
-    {"event3": event3},
-    {"event4": event4},
-    {"event5": event5},
-    {"event6": event6},
-    {"event7": event7},
-    {"event8": event8},
-    {"event9": event9},
-    {"event10": event10}
+const eventMap = new Map([
+    ["event1", event1],
+    ["event2", event2],
+    ["event3", event3],
+    ["event4", event4],
+    ["event5", event5],
+    ["event6", event6],
+    ["event7", event7],
+    ["event8", event8],
+    ["event9", event9],
+    ["event10", event10],
+]
 )
 
 export async function GET(request){
     var eventId = request.nextUrl.searchParams.get('eventId');
-    if(await eventMap.has(eventId)){
-        return new Response(eventMap[eventId], {status: 200})
+    if(eventMap.has(eventId)){
+        return new Response(eventMap.get(eventId), {status: 200});
     }
     return new Response("Event not found", {status: 400});
 }
