@@ -157,13 +157,13 @@ img {
   bottom: 0px;
   background-color: black;
   width: 100vw;
-  height: 30vh;
+  height: 20vh;
   overflow-y: hidden;
 }
 .footerPadMobile {
   position: relative;
   margin-bottom: 0px;
-  height: 60vh;
+  height: 35vh;
 }
 .hide {
   display: none;
