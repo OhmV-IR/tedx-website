@@ -95,6 +95,10 @@ export default function Page() {
     position: relative;
     margin-top: 5vh;
 }
+p {
+    word-break: normal;
+    white-space: normal;
+}
 `}</style>
             {isMobile
                 ? <><div className="badge bg-blue-lt scheduleEventCardMobile" id="card1">
