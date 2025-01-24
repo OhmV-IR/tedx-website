@@ -111,7 +111,7 @@ export default function Page() {
                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div className="modal-body">
-                                    <p>Some additional details about the event in question(event 1). This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question(event 1). This could be a location, topic, person, or really anything you want!
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                 </div>
@@ -137,7 +137,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                        <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                        <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want!
                                         This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -163,7 +163,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -189,7 +189,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -215,7 +215,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -241,7 +241,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -267,7 +267,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -293,7 +293,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -319,7 +319,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -345,7 +345,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                         <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
                                     </div>
@@ -380,7 +380,7 @@ export default function Page() {
                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div className="modal-body">
-                                <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                 This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                 </div>
                                 <div className="modal-footer">
@@ -406,7 +406,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -432,7 +432,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -458,7 +458,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -484,7 +484,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -510,7 +510,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -536,7 +536,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -562,7 +562,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -588,7 +588,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
@@ -614,7 +614,7 @@ export default function Page() {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! <br></br>
+                                    <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
                                     </div>
                                     <div className="modal-footer">
