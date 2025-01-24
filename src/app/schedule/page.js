@@ -5,7 +5,7 @@ const mobile = require('is-mobile');
 export default function Page() {
     const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
-        setIsMobile(mobile())
+        setIsMobile(true)
         var icsDownloads = document.getElementsByClassName('icsDownloadButton')
         for (let i = 0; i < icsDownloads.length; i++) {
             icsDownloads[i].addEventListener("click", (evt) => {
@@ -65,7 +65,7 @@ export default function Page() {
     position: relative;
     margin-left: 0vw;
     margin-top: 1vh;
-    width: 30vw;
+    width: 100vw;
     height: 20vh;
 }
 .schedule-event-name-mobile {
