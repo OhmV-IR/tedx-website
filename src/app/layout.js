@@ -9,8 +9,8 @@ export default function RootLayout({ children }) {
     return (
         <html>
             <body>
-            <title>TedX Centreville Chicopee Youth</title>
-            <link rel="icon" href="/favicon.png"></link>
+                <title>TedX Centreville Chicopee Youth</title>
+                <link rel="icon" href="/favicon.png"></link>
                 <div id="approot">
                     <Analytics></Analytics>
                     <SpeedInsights></SpeedInsights>
@@ -20,7 +20,52 @@ export default function RootLayout({ children }) {
                         ? <IconX stroke={2} size={44} id="menuIcon" onClick={CloseSiteMenu} color="#EB0028"></IconX>
                         : <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={OpenSiteMenu} color="#EB0028"></IconMenu2>
                     }
-                    <div id="siteMenu">
+                    {isMobile
+                    ? <div id="siteMenuMobile">
+                        <a href="/">
+                            <div id="firstMenuElementMobile" className="menuElementMobile">
+                                <IconHome className="menuIconMobile" id="homeIcon" color="#EB0028"></IconHome>
+                                <h3 className="menuLabelMobile" id="homeLabel">Home</h3>
+                            </div>
+                        </a>
+                        <a href="/about">
+                            <div className="menuElementMobile">
+                                <IconInfoSquare className="menuIconMobile" id="aboutIcon" color="#EB0028"></IconInfoSquare>
+                                <h3 className="menuLabelMobile" id="aboutLabel">About TED</h3>
+                            </div>
+                        </a>
+                        <a href="/media">
+                            <div className="menuElementMobile">
+                                <IconPhoto className="menuIconMobile" id="mediaIcon" color="#EB0028"></IconPhoto>
+                                <h3 className="menuLabelMobile" id="mediaLabel">Media</h3>
+                            </div>
+                        </a>
+                        <a href="/sponsors">
+                            <div className="menuElementMobile">
+                                <IconCurrencyDollar className="menuIconMobile" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
+                                <h3 className="menuLabelMobile" id="sponsorsLabel">Sponsors</h3>
+                            </div>
+                        </a>
+                        <a href="/speakers">
+                            <div className="menuElementMobile">
+                                <IconSpeakerphone className="menuIconMobile" id="speakersIcon" color="#EB0028"></IconSpeakerphone>
+                                <h3 className="menuLabelMobile" id="speakersLabel">Speakers</h3>
+                            </div>
+                        </a>
+                        <a href="/schedule">
+                            <div className="menuElementMobile">
+                                <IconCalendarEvent className="menuIconMobile" id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
+                                <h3 className="menuLabelMobile" id="scheduleLabel">Schedule</h3>
+                            </div>
+                        </a>
+                        <a href="/ourteam">
+                            <div className="menuElementMobile">
+                                <IconUsers className="menuIconMobile" id="ourTeamIcon" color="#EB0028"></IconUsers>
+                                <h3 className="menuLabelMobile" id="ourTeamLabel" onAnimationEnd={EndAnimationSiteMenu}>Our Team</h3>
+                            </div>
+                        </a>
+                    </div>
+                    : <div id="siteMenu">
                         <a href="/">
                             <div id="firstMenuElement" className="menuElement">
                                 <IconHome className="menuIcon" id="homeIcon" color="#EB0028"></IconHome>
@@ -64,10 +109,11 @@ export default function RootLayout({ children }) {
                             </div>
                         </a>
                     </div>
+                    }
                     {children}
                     {siteMenuEnabled
-                    ?<div></div>
-                    :<><div className="footerPad"></div><div id="footer" tabIndex="50">
+                        ? <></>
+                        : <><div className="footerPad"></div><div id="footer" tabIndex="50">
                             <h3 id="tedLicenseStatement" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
                             <h3 id="tedXProgramLink" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
                         </div></>}
@@ -88,7 +134,7 @@ export default function RootLayout({ children }) {
             let menuIcon = document.getElementById("menuIcon");
             menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
             let roots = document.getElementsByClassName("divRoot");
-            for(let i = 0; i < roots.length; i++){
+            for (let i = 0; i < roots.length; i++) {
                 roots[i].classList.add('hide');
             }
         }
@@ -105,7 +151,7 @@ export default function RootLayout({ children }) {
             let menuIcon = document.getElementById("menuIcon");
             menuIcon.style.animation = "menuIcon-shrink 0.4s linear 0s 1 normal";
             let roots = document.getElementsByClassName("divRoot");
-            for(let i = 0; i < roots.length; i++){
+            for (let i = 0; i < roots.length; i++) {
                 roots[i].classList.remove('hide');
             }
         }
@@ -114,7 +160,7 @@ export default function RootLayout({ children }) {
         if (siteMenuEnabled) {
             document.getElementById("siteMenu").style.display = "none";
         }
-        else{
+        else {
             document.getElementById("menuIcon").style.animation = "menuIcon-expand 0.4s linear 0s 1 normal";
         }
         setSiteMenuEnabled(!siteMenuEnabled);
