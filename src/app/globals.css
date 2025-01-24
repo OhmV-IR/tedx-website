@@ -144,6 +144,27 @@ img {
   position: relative;
   margin-top: 1vh;
 }
+#tedLicenseStatementMobile {
+  position: relative;
+  margin-top: 1vh;
+}
+#tedXProgramLinkMobile {
+  position: relative;
+  margin-top: 1vh;
+}
+#footerMobile {
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  width: 100vw;
+  height: 30vh;
+  overflow-y: hidden;
+}
+.footerPadMobile {
+  position: relative;
+  margin-bottom: 0px;
+  height: 60vh;
+}
 .hide {
   display: none;
 }

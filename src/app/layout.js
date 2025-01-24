@@ -118,12 +118,19 @@ export default function RootLayout({ children }) {
                         </div>
                     }
                     {children}
-                    {siteMenuEnabled
-                        ? <></>
-                        : <><div className="footerPad"></div><div id="footer" tabIndex="50">
+                    {!siteMenuEnabled && !isMobile
+                        ? <><div className="footerPad"></div><div id="footer" tabIndex="50">
                             <h3 id="tedLicenseStatement" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
                             <h3 id="tedXProgramLink" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
-                        </div></>}
+                        </div></>
+                        : <></>}
+                    {!siteMenuEnabled && isMobile
+                        ? <><div className="footerPadMobile"></div><div id="footerMobile" tabIndex="50">
+                            <h3 id="tedLicenseStatementMobile" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
+                            <h3 id="tedXProgramLinkMobile" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
+                        </div></>
+                        : <></>
+                    }
                 </div>
             </body>
         </html>
