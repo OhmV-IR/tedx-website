@@ -1,9 +1,49 @@
 const event1 = createIcsFile(new Date(2025, 0, 24, 8, 30, 0, 0), new Date(2025, 0, 24, 10, 0, 0, 0), "event1", "https://example.com", "CHCI caf", "a cool description")
+const event2 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event3 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event4 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event5 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event6 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event7 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event8 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event9 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const event10 = createIcsFile(new Date(2025, 0, 24, 10, 0, 0, 0), new Date(2025, 0, 24, 12, 0, 0, 0), "event2", "https://example.com", "Somewhere cool", "a cool description")
+const eventMap = Map(
+    {"event1": event1},
+    {"event2": event2},
+    {"event3": event3},
+    {"event4": event4},
+    {"event5": event5},
+    {"event6": event6},
+    {"event7": event7},
+    {"event8": event8},
+    {"event9": event9},
+    {"event10": event10}
+)
+
 export async function GET(request){
     var eventId = request.nextUrl.searchParams.get('eventId');
     switch(eventId){
         case "event1":
             return new Response(event1, {status: 200});
+        case "event2":
+            return new Response(event2, {status: 200});
+        case "event3":
+            return new Response(event3, {status: 200});
+        case "event4":
+            return new Response(event4, {status: 200});
+        case "event5":
+            return new Response(event5, {status: 200})
+        case "event6":
+            return new Response(event6, {status: 200})
+        case "event7":
+            return new Response(event7, {status: 200});
+        case "event8":
+            return new Response(event8, {status: 200});
+        case "event9":
+            return new Response(event9, {status: 200});
+        case "event10":
+            return new Response(event10, {status: 200});
         default:
             return new Response("Event not found!", {status: 400});
     }

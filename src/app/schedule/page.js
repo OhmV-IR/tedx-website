@@ -8,7 +8,7 @@ export default function Page() {
             icsDownloads[i].addEventListener("click", (evt) => {
                 console.log("test")
                 const link = document.createElement("a");
-                link.href = "/api/downloadEvent?eventId=" + evt.target.parentElement.parentElement.parentElement.parentElement.id
+                link.href = "/api/downloadEvent?eventId=" + evt.target.id
                 link.download = "tedxevent.ics"
                 link.click()
             })
@@ -77,7 +77,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event1" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event2" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event3" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event4" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event5" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event6" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event7" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -259,7 +259,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event8" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event9" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
@@ -311,7 +311,7 @@ export default function Page() {
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
+                                <button type="button" id="event10" className="btn btn-primary icsDownloadButton">Download to Calendar</button>
                             </div>
                         </div>
                     </div>
