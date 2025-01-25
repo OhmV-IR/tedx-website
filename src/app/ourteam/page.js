@@ -4,7 +4,7 @@ const mobile = require('is-mobile');
 export default function Page() {
     const [isMobile, setIsMobile] = useState(false)
     useEffect(() => {
-        setIsMobile(true) // idea for this one is to make it rows of one instead of two for mobile and that should work
+        setIsMobile(mobile())
     });
     return (
         <div className="divRoot">
@@ -25,34 +25,17 @@ overflow-y: hidden;
     font-weight: 900;
     font-style: normal;
     font-size: 100%;
-    width: 60vw;
+    width: 50vw;
     height: 11vh;
+    scale: 2.5;
     color: white;
-    position: absolute;
-    left: 20vw;
-    top: 40vh;
+    position: relative;
+    margin-left: 23.5vw;
+    margin-top: 25vh;
     text-align: center;
 }
 #firstMeetTeamPhotoMobile {
-    margin-top: 40vh;
-}
-#pageTitleMobile {
-    font-family: "League Spartan", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 60%;
-    scale: 6;
-    width: 60vw;
-    height: 11vh;
-    color: white;
-    position: absolute;
-    left: 20vw;
-    top: 40vh;
-    text-align: center;
-}
-#firstMeetTeamPhotoMobile {
-    margin-top: 40vh;
+    margin-top: 0vh;
 }
 .meetTeamPhotoMobile {
     position: relative;
@@ -92,24 +75,38 @@ overflow-y: hidden;
             {isMobile
                 ? <><div id="background" tabIndex={-25}>
                     <h1 id="pageTitleMobile" tabIndex={-10}>MEET THE TEAM</h1>
-                    <div className="d-flex align-self-center">
-                        <img id="firstMeetTeamPhotoMobile" className="meetTeamPhotoMobile" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
-                    </div>
-                    <div className="d-flex align-self-center">
-                        <img className="meetTeamPhotoMobile" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
-                    </div>
-                    <div className="d-flex align-self-center">
-                        <img className="meetTeamPhotoMobile" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
-                    </div>
-                    <div className="d-flex align-self-center">
-                        <img className="meetTeamPhotoMobile" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
-                    </div>
-                    <div className="d-flex align-self-center">
-                        <img className="meetTeamPhotoMobile" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
-                    </div>
-                    <div className="d-flex align-self-center">
-                        <img className="meetTeamPhotoMobile" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
-                    </div>
+                    <div className="row row-deck">
+                        <div className="col-lg-4">
+                            <div className="d-flex align-self-center">
+                                <img id="firstMeetTeamPhotoMobile" className="meetTeamPhotoMobile" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
+                            </div></div></div>
+                    <div className="row row-deck">
+                        <div className="col-lg-4">
+                            <div className="d-flex align-self-center">
+                                <img className="meetTeamPhotoMobile" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
+                            </div></div></div>
+                    <div className="row row-deck">
+                        <div className="col-lg-4">
+                            <div className="d-flex align-self-center">
+                                <img className="meetTeamPhotoMobile" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
+                            </div></div></div>
+                    <div className="row row-deck">
+                        <div className="col-lg-4">
+                            <div className="d-flex align-self-center">
+                                <img className="meetTeamPhotoMobile" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
+                            </div></div></div>
+                    <div className="row row-deck">
+                        <div className="col-lg-4">
+                            <div className="d-flex align-self-center">
+                                <img className="meetTeamPhotoMobile" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
+                            </div>
+                        </div></div>
+                    <div className="row row-deck">
+                        <div className="col-lg-4">
+                            <div className="d-flex align-self-center">
+                                <img className="meetTeamPhotoMobile" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
+                            </div>
+                        </div></div>
                 </div></>
 
 
