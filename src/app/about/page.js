@@ -38,7 +38,7 @@ export default function Page() {
     text-decoration-thickness: 2px !important;
 }
         `}</style>
-            <strong><h1 id="aboutTedXHeader">About TEDx</h1></strong>
+        <strong><h1 id="aboutTedXHeader">About TEDx</h1></strong>
             <h3 id="aboutTedXText">
                 In the spirit of discovering and spreading ideas, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience.
                 At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection.
