@@ -60,7 +60,7 @@ function Homepage() {
     document.getElementById("formEmail").onchange = OnEmailTextChange;
     document.getElementById("formEmailSubmit").onclick = OnEmailSubmit;
     setIsMobile(mobile());
-  }, []);
+  });
   return (
     <div className="divRoot">
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
