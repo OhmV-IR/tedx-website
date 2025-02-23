@@ -1,7 +1,7 @@
 'use client'
 import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, IconHeartRateMonitor, IconMail } from '@tabler/icons-react';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 const mobile = require('is-mobile')
 function Homepage() {
   const [emailInputValue, setEmailInputValue] = useState("");
@@ -57,7 +57,7 @@ function Homepage() {
     document.getElementById("formEmail").onchange = OnEmailTextChange;
     document.getElementById("formEmailSubmit").onclick = OnEmailSubmit;
     setIsMobile(mobile());
-  }, []);
+  }, [OnEmailTextChange, OnEmailSubmit]);
   return (
     <div className="divRoot">
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
