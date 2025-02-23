@@ -84,7 +84,7 @@ function Homepage() {
     position: relative;
     align: center;
     width: 100vw;
-    margin-top: 23vh;
+    margin-top: 78vh;
 }
 .widerButton {
   width: 35vw;
@@ -119,6 +119,10 @@ h1 {
   overflow-y: hidden;
 }
 .largeIcon {
+  z-index: -1;
+}
+.iconWhite {
+  color: white !important;
   z-index: -1;
 }
 #successAlert {
@@ -168,17 +172,24 @@ h1 {
     position: relative;
     align: center;
     width: 100vw;
-    margin-top: 0vh;
+    margin-top: 40vh;
 }
 .widerButtonMobile {
   width: 45vw;
+}
+#blackBg {
+  position: absolute;
+  left: 65vw;
+  top: 0;
+  width: 35vw;
+  height: 75vh;
+  background-color: black;
 }
     `}</style>
     {isMobile
     ?<><div id="successAlert" className="alert alert-success" role="alert">Mailing list signup successful!</div>
     <div id="failedAlert" className="alert alert-danger" role="alert">Mailing list signup failed!</div> 
-      <h1 id="sloganTextMobile">Power of <br></br>us</h1>
-      <Image id="iconCarouselBackgroundMobile" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "65vh", width: "100vw"}} src="/16x9Background.png" width={1920} height={1080} alt="A swirly colorful background." layout="fill"></Image>
+      <Image id="iconCarouselBackgroundMobile" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "65vh", width: "100vw"}} src="/tedxbackground.png" width={2000} height={1545} alt="A swirly colorful background." layout="fill"></Image>
       <div id="iconCarouselMobile" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-indicators visually-hidden">
           <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="0" className="active"></button>
@@ -263,8 +274,8 @@ h1 {
 
     :<><div id="successAlert" className="alert alert-success" role="alert">Mailing list signup successful!</div>
     <div id="failedAlert" className="alert alert-danger" role="alert">Mailing list signup failed!</div> 
-      <h1 id="sloganText">Power of us</h1>
-      <Image src="/16x9Background.png" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "75vh", width: "100vw"}} width={1920} height={1080} alt="A swirly colorful background."></Image>
+    <div id="blackBg"></div>
+    <Image src="/tedxbackground.png" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "75vh", width: "65vw", zIndex: -10}} width={1920} height={1080} alt="A swirly colorful background."></Image>
       <div id="iconCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-indicators visually-hidden">
           <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="0" className="active"></button>
@@ -276,22 +287,22 @@ h1 {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <IconUsersGroup className="largeIcon" ></IconUsersGroup>
+            <IconUsersGroup className="largeIcon iconWhite" ></IconUsersGroup>
           </div>
           <div className="carousel-item">
-            <IconLeaf className="largeIcon" ></IconLeaf>
+            <IconLeaf className="largeIcon iconWhite" ></IconLeaf>
           </div>
           <div className="carousel-item">
-            <IconCoinEuro className="largeIcon" ></IconCoinEuro>
+            <IconCoinEuro className="largeIcon iconWhite" ></IconCoinEuro>
           </div>
           <div className="carousel-item">
-            <IconWorld className="largeIcon" ></IconWorld>
+            <IconWorld className="largeIcon iconWhite" ></IconWorld>
           </div>
           <div className="carousel-item">
-            <IconFirstAidKit className="largeIcon" ></IconFirstAidKit>
+            <IconFirstAidKit className="largeIcon iconWhite" ></IconFirstAidKit>
           </div>
           <div className="carousel-item">
-            <IconHeartRateMonitor className="largeIcon" ></IconHeartRateMonitor>
+            <IconHeartRateMonitor className="largeIcon iconWhite" ></IconHeartRateMonitor>
           </div>
           <a className="carousel-control-prev visually-hidden" data-bs-target="#iconCarousel" role="button" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
