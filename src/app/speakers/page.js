@@ -3,23 +3,24 @@ import { IconWorldWww, IconBrandInstagram, IconBrandFacebook, IconBrandYoutube, 
 export default function Page() {
     return (
         <div className="divRoot">
-            <style jsx>{`#speakerImg1 {
-    background-image: url("https://www.picsum.photos/1920/1080") !important;
+            <style jsx>{`
+#speakerImg1 {
+    background-image: url("/NelsonPortrait.jpg") !important;
 }
 #speakerImg2 {
-    background-image: url("https://www.picsum.photos/1920/1080") !important;
+    background-image: url("/PatriciaPortrait.png") !important;
 }
 #speakerImg3 {
-    background-image: url("https://www.picsum.photos/1920/1080") !important;
+    background-image: url("/YasirPortrait.png") !important;
 }
 #speakerImg4 {
-    background-image: url("https://www.picsum.photos/1920/1080") !important;
+    background-image: url("/MitchPortrait.png") !important;
 }
 #speakerImg5 {
-    background-image: url("https://www.picsum.photos/1920/1080") !important;
+    background-image: url("/KaitlynPortrait.jpg") !important;
 }
 #speakerImg6 {
-    background-image: url("https://www.picsum.photos/1920/1080") !important;
+    background-image: url("/JyotiPortrait.jpg") !important;
 }
 .card-body {
     font-size: 150%;
@@ -52,11 +53,11 @@ export default function Page() {
                         <div id="speakerImg1" className="img-responsive img-responsive-1x1 card-img-top speakerCardImage"></div>
                         <div className="card-header">
                             <div className="card-title">
-                                Tanner Bergsma
+                                Nelson Switzer
                             </div>
                         </div>
                         <div className="card-body">
-                        Through my experiences as an activist, author, and humanitarian, I’ve learned the importance of uplifting others and creating opportunities for growth and transformation.
+                        Nelson A. Switzer is a Gigacorn Hunter and climate innovation leader driving billion-tonne carbon reduction solutions with deep expertise in sustainability, ESG, and finance.
                         </div>
                         <div className="d-flex align-self-center">
                             <a href="https://instagram.com/tannerbergsma" className="socialLinkLeftSide"><IconBrandInstagram></IconBrandInstagram></a>
@@ -71,11 +72,11 @@ export default function Page() {
                         <div id="speakerImg2" className="img-responsive img-responsive-1x1 card-img-top speakerCardImage"></div>
                         <div className="card-header">
                             <div className="card-title">
-                                Mona Abu Maneh
+                                Patrica Abdallah
                             </div>
                         </div>
                         <div className="card-body">
-                        I want to empower young minds to see that they too have the potential to bring light to someone else's story, to take risks for the greater good, and to inspire others through their actions.
+                            Patricia Abdallah is the founder of The Homeowner Link, a platform that connects real estate professionals with service providers to streamline real estate transactions.
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://www.linkedin.com/in/mona-abu-nameh-31a55319?trk=feed-detail_main-feed-card_feed-actor-image" className="speakerSocialLink linkPos3"><IconBrandLinkedin></IconBrandLinkedin></a>
@@ -88,11 +89,11 @@ export default function Page() {
                         <div id="speakerImg3" className="img-responsive img-responsive-1x1 card-img-top speakerCardImage"></div>
                         <div className="card-header">
                             <div className="card-title">
-                                Roy Taylor
+                                Yasir Khan
                             </div>
                         </div>
                         <div className="card-body">
-                        Need a short blurb about speaker here
+                            Yasir Khan is the founder of SpeakLikeACEO.com, a keynote speaker, and expert in coaching CEOs and leaders to present with confidence and impact.
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://taylorconsultinggroup.org/"><IconWorldWww></IconWorldWww></a>
@@ -107,11 +108,11 @@ export default function Page() {
                         <div id="speakerImg4" className="img-responsive img-responsive-1x1 card-img-top speakerCardImage"></div>
                         <div className="card-header">
                             <div className="card-title">
-                                Nelson Switzer
+                                Mitch Abrams
                             </div>
                         </div>
                         <div className="card-body">
-                        As a deeply motivated professional toiling for over 25 years to this end, I seek opportunities to share and learn with those looking to hear, challenge and aspire to shepherd the next era, the 5th Industrial Revolution known as the Decarbonization of Everything (the "DoE").  
+                            Dr. Mitch Abrams is the Founder and CEO of NexGenHealth Ltd., focused on reversing the mental health epidemic through art, technology, and compassionate healthcare practices.
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://ca.linkedin.com/in/nelson-a-switzer-88b944b"><IconBrandLinkedin></IconBrandLinkedin></a>
@@ -124,12 +125,11 @@ export default function Page() {
                         <div id="speakerImg5" className="img-responsive img-responsive-1x1 card-img-top speakerCardImage"></div>
                         <div className="card-header">
                             <div className="card-title">
-                                Maks Turchenko
+                                Kaitlyn Hou
                             </div>
                         </div>
                         <div className="card-body">
-                        
-I want to share my journey, insight, and lessons learned with an aim to motivate and empower everyone towards their passion and dreams. I want to start meaningful conversations, inspire creativity, and encourage continuous learning and growth.
+                            Kaitlyn Hou is a student leader, entrepreneur, and advocate, known for her roles as Student Trustee, CEO of OrangeforChange, and her advocacy for mental health, Indigenous rights, and youth empowerment.
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://www.linkedin.com/in/maks-turchenko-ba99521a2/"><IconBrandLinkedin></IconBrandLinkedin></a>
@@ -142,11 +142,11 @@ I want to share my journey, insight, and lessons learned with an aim to motivate
                         <div id="speakerImg6" className="img-responsive img-responsive-1x1 card-img-top"></div>
                         <div className="card-header">
                             <div className="card-title">
-                                Kaitlyn Hou
+                                Jyoti Balhara
                             </div>
                         </div>
                         <div className="card-body">
-                        Short blurb about speaker here
+                            An experienced pharma executive, researcher, and storyteller with expertise in medical marketing, academia, and leadership, known for innovation and community engagement.
                         </div>
                         <div className="d-flex align-self-center">
                         <a href="https://www.instagram.com/kaitlyn.hdsb/" className="socialLinkLeftSide"><IconBrandInstagram></IconBrandInstagram></a>
