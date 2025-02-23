@@ -218,7 +218,7 @@ h1 {
       <Image id="iconCarouselBackgroundMobile" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "65vh", width: "100vw"}} src="/tedxbackground.png" width={2000} height={1545} alt="A swirly colorful background."></Image>
       <h3 id="eventSloganMobile">Power of<br></br>Us</h3>
       <center><div id="ctaButtonMobile">
-        <a href="#"><button type="button" className="btn btn-danger widerButtonMobile">Get tickets now!</button></a>
+        <a href="https://www.eventbrite.ca/e/tedxcentreville-chicopee-youth-tickets-1109230090059?aff=oddtdtcreator"><button type="button" className="btn btn-danger widerButtonMobile">Get tickets now!</button></a>
         <button type="button" className="btn btn-outline-danger widerButtonMobile" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
       </div></center>
       <div className="modal fade" id="emailSubmissionModal" tabIndex="-1">
@@ -267,7 +267,7 @@ h1 {
     <Image src="/tedxbackground.png" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "75vh", width: "65vw", zIndex: -10}} width={1920} height={1080} alt="A swirly colorful background."></Image>
       <h3 id="eventSlogan">Power of<br></br>Us</h3>
       <center><div id="ctaButton">
-        <a href="#"><button type="button" className="btn btn-danger widerButton">Get tickets now!</button></a>
+        <a href="https://www.eventbrite.ca/e/tedxcentreville-chicopee-youth-tickets-1109230090059?aff=oddtdtcreator"><button type="button" className="btn btn-danger widerButton">Get tickets now!</button></a>
         <button type="button" className="btn btn-outline-danger widerButton" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
       </div></center>
       <div className="modal fade" id="emailSubmissionModal" tabIndex="-1">
