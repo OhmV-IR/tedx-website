@@ -1,6 +1,11 @@
 "use client"
 import { IconWorldWww, IconBrandInstagram, IconBrandFacebook, IconBrandYoutube, IconBrandX, IconBrandTiktok, IconBrandLinkedin } from "@tabler/icons-react";
 export default function Page() {
+
+    function GetIconSize(){
+        return 32;
+    }
+
     return (
         <div className="divRoot">
             <style jsx>{`
@@ -59,9 +64,7 @@ export default function Page() {
                         Nelson A. Switzer is a Gigacorn Hunter and climate innovation leader driving billion-tonne carbon reduction solutions with deep expertise in sustainability, ESG, and finance.
                         </div>
                         <div className="d-flex align-self-center">
-                            <a href="https://instagram.com/tannerbergsma" className="socialLinkLeftSide"><IconBrandInstagram></IconBrandInstagram></a>
-                            <a href="https://tannerbergsma.org"><IconWorldWww></IconWorldWww></a>
-                            <a href="www.linkedIn.com/Tannerbergsma" className="socialLinkRightSide"><IconBrandLinkedin></IconBrandLinkedin></a>
+                            <a href="https://ca.linkedin.com/in/nelson-a-switzer-88b944b"><IconBrandLinkedin size={GetIconSize()}></IconBrandLinkedin></a>
                         </div>
                         <div className="socialFooterPadding"></div>
                     </div>
@@ -78,7 +81,6 @@ export default function Page() {
                             Patricia Abdallah is the founder of The Homeowner Link, a platform that connects real estate professionals with service providers to streamline real estate transactions.
                         </div>
                         <div className="d-flex align-self-center">
-                        <a href="https://www.linkedin.com/in/mona-abu-nameh-31a55319?trk=feed-detail_main-feed-card_feed-actor-image" className="speakerSocialLink linkPos3"><IconBrandLinkedin></IconBrandLinkedin></a>
                         </div>
                         <div className="socialFooterPadding"></div>
                     </div>
@@ -95,7 +97,6 @@ export default function Page() {
                             Yasir Khan is the founder of SpeakLikeACEO.com, a keynote speaker, and expert in coaching CEOs and leaders to present with confidence and impact.
                         </div>
                         <div className="d-flex align-self-center">
-                        <a href="https://taylorconsultinggroup.org/"><IconWorldWww></IconWorldWww></a>
                         </div>
                         <div className="socialFooterPadding"></div>
                     </div>
@@ -114,7 +115,6 @@ export default function Page() {
                             Dr. Mitch Abrams is the Founder and CEO of NexGenHealth Ltd., focused on reversing the mental health epidemic through art, technology, and compassionate healthcare practices.
                         </div>
                         <div className="d-flex align-self-center">
-                        <a href="https://ca.linkedin.com/in/nelson-a-switzer-88b944b"><IconBrandLinkedin></IconBrandLinkedin></a>
                         </div>
                         <div className="socialFooterPadding"></div>
                     </div>
@@ -131,7 +131,8 @@ export default function Page() {
                             Kaitlyn Hou is a student leader, entrepreneur, and advocate, known for her roles as Student Trustee, CEO of OrangeforChange, and her advocacy for mental health, Indigenous rights, and youth empowerment.
                         </div>
                         <div className="d-flex align-self-center">
-                        <a href="https://www.linkedin.com/in/maks-turchenko-ba99521a2/"><IconBrandLinkedin></IconBrandLinkedin></a>
+                        <a href="https://www.instagram.com/kaitlyn.hdsb/" className="socialLinkLeftSide"><IconBrandInstagram size={GetIconSize()}></IconBrandInstagram></a>
+                        <a href="https://www.linkedin.com/in/kaitlynmhou/" className="socialLinkRightSide"><IconBrandLinkedin size={GetIconSize()}></IconBrandLinkedin></a>
                         </div>
                         <div className="socialFooterPadding"></div>
                     </div>
@@ -148,8 +149,6 @@ export default function Page() {
                             An experienced pharma executive, researcher, and storyteller with expertise in medical marketing, academia, and leadership, known for innovation and community engagement.
                         </div>
                         <div className="d-flex align-self-center">
-                        <a href="https://www.instagram.com/kaitlyn.hdsb/" className="socialLinkLeftSide"><IconBrandInstagram></IconBrandInstagram></a>
-                        <a href="https://www.linkedin.com/in/kaitlynmhou/" className="socialLinkRightSide"><IconBrandLinkedin></IconBrandLinkedin></a>
                         </div>
                         <div className="socialFooterPadding"></div>
                     </div>
