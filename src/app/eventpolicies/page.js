@@ -1,5 +1,7 @@
 "use client"
+import {useState, useEffect} from "react";
 function EventPolicies() {
+    const [isMobile, setIsMobile] = useState(false);
     return (
         <div className="divRoot">
             <style jsx>{`
@@ -45,6 +47,8 @@ function EventPolicies() {
             <h3 id="firstRule">Please abide by all rules set out by TED as can be seen here: <a href="https://conferences.ted.com/policies" className="link">TED Policies</a></h3>
                 <h3 className="header" id="firstHeader">Policies</h3>
                 <h3 className="subtext">We welcome attendees who embody the spirit of TEDx—curious, open-minded, and eager to engage in meaningful conversations. Our event is about building connections and sparking new ideas, so we encourage participants to actively contribute to discussions and collaborations.</h3>
+                <h3 className="header">Refunds</h3>
+                <h3 className="subtext">We do not offer refunds for any tickets purchased.</h3>
                 <h3 className="header">Attendance</h3>
                 <h3 className="subtext">To get the most out of the TEDx experience, we encourage attendees to stay for the entire event. Every talk and performance is designed to inspire, and being present throughout ensures you don’t miss valuable moments of insight and connection.</h3>
                 <h3 className="header">During the Talks</h3>
