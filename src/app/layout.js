@@ -41,12 +41,6 @@ export default function RootLayout({ children }) {
                                     <h3 className="menuLabelMobile" id="aboutLabel">About TED</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/sponsors" onClick={CloseSiteMenu}>
-                                <div className="menuElementMobile">
-                                    <IconCurrencyDollar className="menuIconMobile" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
-                                    <h3 className="menuLabelMobile" id="sponsorsLabel">Sponsors</h3>
-                                </div>
-                            </Link>
                             <Link className="link" href="/speakers" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconSpeakerphone className="menuIconMobile" id="speakersIcon" color="#EB0028"></IconSpeakerphone>
@@ -77,12 +71,6 @@ export default function RootLayout({ children }) {
                                 <div className="menuElement">
                                     <IconInfoSquare className="menuIcon" id="aboutIcon" color="#EB0028"></IconInfoSquare>
                                     <h3 className="menuLabel" id="aboutLabel">About TED</h3>
-                                </div>
-                            </Link>
-                            <Link className="link" href="/sponsors" onClick={CloseSiteMenu}>
-                                <div className="menuElement">
-                                    <IconCurrencyDollar className="menuIcon" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
-                                    <h3 className="menuLabel" id="sponsorsLabel">Sponsors</h3>
                                 </div>
                             </Link>
                             <Link className="link" href="/speakers" onClick={CloseSiteMenu}>
