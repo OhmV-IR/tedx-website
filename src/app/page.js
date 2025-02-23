@@ -1,5 +1,6 @@
 'use client'
 import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, IconHeartRateMonitor, IconMail } from '@tabler/icons-react';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 const mobile = require('is-mobile')
 function Homepage() {
@@ -56,7 +57,7 @@ function Homepage() {
     document.getElementById("formEmail").onchange = OnEmailTextChange;
     document.getElementById("formEmailSubmit").onclick = OnEmailSubmit;
     setIsMobile(mobile());
-  });
+  }, []);
   return (
     <div className="divRoot">
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -110,14 +111,6 @@ margin-top: 5vh;
   height: 75vh;
   width: 50vw;
   z-index: -1;
-}
-#iconCarouselBackground {
-  position: absolute;
-  left: 0vw;
-  top: 0vh;
-  height: 75vh;
-  width: 100vw;
-  z-index: -2;
 }
 h1 {
   overflow-y: hidden;
@@ -174,14 +167,6 @@ h1 {
     width: 100vw;
     margin-top: 0vh;
 }
-#iconCarouselBackgroundMobile {
-  position: absolute;
-  left: 0vw;
-  top: 0vh;
-  height: 65vh;
-  width: 100vw;
-  z-index: -2;
-}
 .widerButtonMobile {
   width: 45vw;
 }
@@ -190,7 +175,7 @@ h1 {
     ?<><div id="successAlert" className="alert alert-success" role="alert">Mailing list signup successful!</div>
     <div id="failedAlert" className="alert alert-danger" role="alert">Mailing list signup failed!</div> 
       <h1 id="sloganTextMobile">Power of <br></br>us</h1>
-      <img id="iconCarouselBackgroundMobile" src="/16x9Background.png"></img>
+      <Image id="iconCarouselBackgroundMobile" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "65vh", width: "100vw"}} src="/16x9Background.png" width={1920} height={1080} alt="A swirly colorful background." layout="fill"></Image>
       <div id="iconCarouselMobile" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-indicators visually-hidden">
           <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="0" className="active"></button>
@@ -276,7 +261,7 @@ h1 {
     :<><div id="successAlert" className="alert alert-success" role="alert">Mailing list signup successful!</div>
     <div id="failedAlert" className="alert alert-danger" role="alert">Mailing list signup failed!</div> 
       <h1 id="sloganText">Power of us</h1>
-      <img id="iconCarouselBackground" src="/16x9Background.png"></img>
+      <Image src="/16x9Background.png" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "75vh", width: "100vw"}} width={1920} height={1080} alt="A swirly colorful background."></Image>
       <div id="iconCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div className="carousel-indicators visually-hidden">
           <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="0" className="active"></button>
