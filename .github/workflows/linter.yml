@@ -11,7 +11,8 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: 22
-            - run: npm i
+            - name: Install dependencies
+              run: npm i
             - name: Fail if lint bad
               uses: GuillaumeFalourd/assert-command-line-output@v2.4
               with:
