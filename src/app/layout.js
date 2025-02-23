@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <html>
             <body>
                 <title>TedX Centreville Chicopee Youth</title>
-                <link rel="icon" href="/favicon.png"></link>
+                <link rel="icon" href="/tedxbackground.png"></link>
                 <div id="approot">
                     <Analytics></Analytics>
                     <SpeedInsights></SpeedInsights>
