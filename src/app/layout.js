@@ -50,10 +50,17 @@ export default function RootLayout({ children }) {
                             <Link className="link" href="/ourteam" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconUsers className="menuIconMobile" id="ourTeamIcon" color="#EB0028"></IconUsers>
-                                    <h3 className="menuLabelMobile" id="ourTeamLabel" onAnimationEnd={EndAnimationSiteMenu}>Our Team</h3>
+                                    <h3 className="menuLabelMobile" id="ourTeamLabel">Our Team</h3>
+                                </div>
+                            </Link>
+                            <Link className="link" href="/eventpolicies" onClick={CloseSiteMenu}>
+                                <div className="menuElement">
+                                    <IconNotebook className="menuIconMobile" id="eventPoliciesIcon" color="#EB0028"></IconNotebook>
+                                    <h3 className="menuLabelMobile" id="eventPoliciesLabel" onAnimationEnd={EndAnimationSiteMenu}>Event Policies</h3>
                                 </div>
                             </Link>
                         </div>
+
                         : <div id="siteMenu">
                             <Link className="link" href="/" onClick={CloseSiteMenu}>
                                 <div id="firstMenuElement" className="menuElement">
