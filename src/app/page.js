@@ -3,61 +3,64 @@ import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, Ico
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 const mobile = require('is-mobile')
+
+function SetLargeIconSize() {
+  let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  let iconsize = (0.25 * vw).toString();
+  var icons = document.getElementsByClassName("largeIcon");
+  for (var i = 0; i < icons.length; i++) {
+    icons[i].setAttribute("width", iconsize);
+    icons[i].setAttribute("height", iconsize);
+  }
+}
+function OnEmailSubmit(){
+  const requestOptions = {
+    method: "POST",
+    redirect: "follow"
+  };
+  console.log("submitted email: " + emailInputValue);
+  fetch("/api/writeEmail?email=" + emailInputValue, requestOptions).then((res) => {
+    if(res.status == 200){
+      console.log("Email submitted successfully");
+      document.getElementById("successAlert").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("successAlert").style.display = "none";
+      }, bannerDisplayTime);
+    }
+    else{
+      console.error("Email submission failed");
+      document.getElementById("failedAlert").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("failedAlert").style.display = "none";
+      }, bannerDisplayTime);
+    }
+  })
+}
+function OnEmailTextChange(evt){
+  setEmailInputValue(evt.target.value);
+  if(evt.target.value.match("[a-z0-9].*\@[a-z0-9].*\..*")){
+    document.getElementById("formEmail").classList.remove("border-danger");
+    document.getElementById("formEmail").classList.add("border-success");
+    document.getElementById("formEmailSubmit").disabled = false;
+  }
+  else{
+    document.getElementById("formEmail").classList.remove("border-success")
+    document.getElementById("formEmail").classList.add("border-danger");
+    document.getElementById("formEmailSubmit").disabled = true;
+  }
+}
+
+
 function Homepage() {
   const [emailInputValue, setEmailInputValue] = useState("");
   const [isMobile, setIsMobile] = useState(false)
   const bannerDisplayTime = 4000; // in ms
-  function SetLargeIconSize() {
-    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    let iconsize = (0.25 * vw).toString();
-    var icons = document.getElementsByClassName("largeIcon");
-    for (var i = 0; i < icons.length; i++) {
-      icons[i].setAttribute("width", iconsize);
-      icons[i].setAttribute("height", iconsize);
-    }
-  }
-  function OnEmailSubmit(){
-    const requestOptions = {
-      method: "POST",
-      redirect: "follow"
-    };
-    console.log("submitted email: " + emailInputValue);
-    fetch("/api/writeEmail?email=" + emailInputValue, requestOptions).then((res) => {
-      if(res.status == 200){
-        console.log("Email submitted successfully");
-        document.getElementById("successAlert").style.display = "block";
-        setTimeout(() => {
-          document.getElementById("successAlert").style.display = "none";
-        }, bannerDisplayTime);
-      }
-      else{
-        console.error("Email submission failed");
-        document.getElementById("failedAlert").style.display = "block";
-        setTimeout(() => {
-          document.getElementById("failedAlert").style.display = "none";
-        }, bannerDisplayTime);
-      }
-    })
-  }
-  function OnEmailTextChange(evt){
-    setEmailInputValue(evt.target.value);
-    if(evt.target.value.match("[a-z0-9].*\@[a-z0-9].*\..*")){
-      document.getElementById("formEmail").classList.remove("border-danger");
-      document.getElementById("formEmail").classList.add("border-success");
-      document.getElementById("formEmailSubmit").disabled = false;
-    }
-    else{
-      document.getElementById("formEmail").classList.remove("border-success")
-      document.getElementById("formEmail").classList.add("border-danger");
-      document.getElementById("formEmailSubmit").disabled = true;
-    }
-  }
   useEffect(() => {
     SetLargeIconSize();
     document.getElementById("formEmail").onchange = OnEmailTextChange;
     document.getElementById("formEmailSubmit").onclick = OnEmailSubmit;
     setIsMobile(mobile());
-  }, [OnEmailTextChange, OnEmailSubmit]);
+  }, []);
   return (
     <div className="divRoot">
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
