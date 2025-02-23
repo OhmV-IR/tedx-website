@@ -12,8 +12,8 @@ jobs:
               with:
                 node-version: 22
             - run: npm i
-            - run: 
-            - uses: GuillaumeFalourd/assert-command-line-output@v2.4
+            - name: Fail if lint bad
+              uses: GuillaumeFalourd/assert-command-line-output@v2.4
               with:
                 command_line: npm run lint
                 assert_file_path: eslintpass.txt
