@@ -12,7 +12,10 @@ jobs:
               with:
                 node-version: 22
             - run: npm i
-            - run: echo "$(npm run lint)" >> $GITHUB_OUTPUT
+            - run: 
             - name: Fail if lint errors
-              if: env.OUTPUT != '✔ No ESLint warnings or errors'
-              run: exit 1
+              uses: GuillaumeFalourd/assert-command-line-output@v2.4
+              with:
+                command_line: npm run lint
+                assert_file_path: eslintpass.txt
+                expected_result: PASSED
