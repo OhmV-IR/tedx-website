@@ -1,11 +1,12 @@
 "use client"
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 const mobile = require('is-mobile')
 export default function Page() {
     const [isMobile, setIsMobile] = useState(false)
     useEffect(() => {
         setIsMobile(mobile())
-    })
+    }, [])
     return (
         <div className="divRoot">
         <style jsx>{`#carousel {
@@ -51,19 +52,19 @@ export default function Page() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                 </div>
                 <a className="carousel-control-prev" data-bs-target="#carouselMobile" role="button" data-bs-slide="prev">
@@ -90,19 +91,19 @@ export default function Page() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" />
+                        <Image className="d-block w-100" alt="" src="https://www.picsum.photos/1920/1080" width={1920} height={1080}/>
                     </div>
                 </div>
                 <a className="carousel-control-prev" data-bs-target="#carousel" role="button" data-bs-slide="prev">
