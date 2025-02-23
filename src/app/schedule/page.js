@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import { useEffect, useState } from "react";
 const mobile = require('is-mobile');
 
@@ -16,7 +17,7 @@ export default function Page() {
                 link.click()
             })
         }
-    })
+    }, [])
     return (
         <div className="divRoot">
             <style jsx>{
@@ -43,13 +44,6 @@ export default function Page() {
     color: grey;
     top: 25%;
     left: 70%;
-}
-.schedule-event-icon {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    height: 95%;
-    width: 15%;
 }
 .schedule-event-details-button {
     position: absolute;
@@ -91,10 +85,6 @@ export default function Page() {
     top: 37.5%;
     width: 25%;
 }
-.mobileModalImage {
-    position: relative;
-    margin-top: 5vh;
-}
 p {
     word-break: normal;
     white-space: normal;
@@ -118,7 +108,7 @@ p {
                                 <div className="modal-body">
                                     <p>Some additional details about the event in question(event 1). This could be a location, topic, person, or really anything you want!
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                    <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                    <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -144,7 +134,7 @@ p {
                                     <div className="modal-body">
                                         <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want!
                                         This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -170,7 +160,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -196,7 +186,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -222,7 +212,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -248,7 +238,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -274,7 +264,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -300,7 +290,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -326,7 +316,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -352,7 +342,7 @@ p {
                                     <div className="modal-body">
                                     <p>Some additional details about the event in question. This could be a location, topic, person, or really anything you want! 
                                     This is some really long text lorem ipsum is a true savior that we must all respect and worship in order to continue life on the planet commonly known as Earth.</p>
-                                        <img className="mobileModalImage" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                                        <Image style={{position: "relative", marginTop: "5vh"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn me-auto" data-bs-dismiss="modal">Close</button>
@@ -373,7 +363,7 @@ p {
                 : <><div className="badge bg-blue-lt scheduleEventCard" id="card1">
                     <h1 className="schedule-event-name"><p>Reception</p></h1>
                     <h2 className="schedule-event-time">8:30AM-9:00AM</h2>
-                    <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                    <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                     <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard1">
                         Details
                     </button>
@@ -399,7 +389,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card2">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard2">
                             Details
                         </button>
@@ -425,7 +415,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card3">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard3">
                             Details
                         </button>
@@ -451,7 +441,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card4">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard4">
                             Details
                         </button>
@@ -477,7 +467,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card5">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard5">
                             Details
                         </button>
@@ -503,7 +493,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card6">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard6">
                             Details
                         </button>
@@ -529,7 +519,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card7">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard7">
                             Details
                         </button>
@@ -555,7 +545,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card8">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard8">
                             Details
                         </button>
@@ -581,7 +571,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card9">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard9">
                             Details
                         </button>
@@ -607,7 +597,7 @@ p {
                     <div className="badge bg-blue-lt scheduleEventCard" id="card10">
                         <h1 className="schedule-event-name"><p>Reception</p></h1>
                         <h2 className="schedule-event-time"><p>9:05AM-9:30AM</p></h2>
-                        <img className="schedule-event-icon" src="https://www.picsum.photos/1920/1080" alt="Placeholder"></img>
+                        <Image style={{position: "absolute", left: 0, top: 0, height: "95%", width: "15%"}} src="https://www.picsum.photos/1920/1080" width={1920} height={1080} alt="Placeholder"></Image>
                         <button type="button" className="btn btn-primary schedule-event-details-button" data-bs-toggle="modal" data-bs-target="#modalcard10">
                             Details
                         </button>

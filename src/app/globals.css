@@ -1,7 +1,7 @@
+@import '../../public/tabler.min.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   overflow-x: hidden;
 }
@@ -43,7 +43,7 @@ body {
   margin-top: 7vh;
 }
 
-a {
+.link {
   text-decoration: none !important;
   color: inherit !important;
 }

@@ -1,17 +1,14 @@
 "use client"
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 const mobile = require('is-mobile');
 export default function Page() {
     const [isMobile, setIsMobile] = useState(false)
     useEffect(() => {
         setIsMobile(mobile())
-    });
+    }, []);
     return (
         <div className="divRoot">
-            <link rel="stylesheet" href="/tabler.min.css"></link>
-            <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
-            <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"></link>
             <style jsx>{`
 #meetTeamPost {
     background-color: #080130;
@@ -34,15 +31,6 @@ overflow-y: hidden;
     margin-top: 25vh;
     text-align: center;
 }
-#firstMeetTeamPhotoMobile {
-    margin-top: 0vh;
-}
-.meetTeamPhotoMobile {
-    position: relative;
-    margin-top: 10vh;
-    margin-left: 0vw;
-    width: 100vw;
-}
 #pageTitle {
     font-family: "League Spartan", serif;
     font-optical-sizing: auto;
@@ -58,14 +46,6 @@ overflow-y: hidden;
     top: 40vh;
     text-align: center;
 }
-.meetTeamPhoto {
-    position: relative;
-    margin-top: 40vh;
-    margin-left: 4vw;
-}
-#firstmeetTeamPhoto {
-    margin-top: 40vh;
-}
 #background {
     background-color: #080130;
 }
@@ -78,33 +58,33 @@ overflow-y: hidden;
                     <div className="row row-deck">
                         <div className="col-lg-4">
                             <div className="d-flex align-self-center">
-                                <img id="firstMeetTeamPhotoMobile" className="meetTeamPhotoMobile" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
+                                <Image style={{position: "relative", marginTop: 0, marginLeft: 0, width: "100vw"}} className="meetTeamPhotoMobile" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event" width={1080} height={1080}></Image>
                             </div></div></div>
                     <div className="row row-deck">
                         <div className="col-lg-4">
                             <div className="d-flex align-self-center">
-                                <img className="meetTeamPhotoMobile" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
+                                <Image style={{position: "relative", marginTop: "10vh", marginLeft: 0, width: "100vw"}} src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event" width={1080} height={1080}></Image>
                             </div></div></div>
                     <div className="row row-deck">
                         <div className="col-lg-4">
                             <div className="d-flex align-self-center">
-                                <img className="meetTeamPhotoMobile" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
+                                <Image style={{position: "relative", marginTop: "10vh", marginLeft: 0, width: "100vw"}} src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event" width={1080} height={1080}></Image>
                             </div></div></div>
                     <div className="row row-deck">
                         <div className="col-lg-4">
                             <div className="d-flex align-self-center">
-                                <img className="meetTeamPhotoMobile" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
+                                <Image style={{position: "relative", marginTop: "10vh", marginLeft: 0, width: "100vw"}} src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event" width={1080} height={1080}></Image>
                             </div></div></div>
                     <div className="row row-deck">
                         <div className="col-lg-4">
                             <div className="d-flex align-self-center">
-                                <img className="meetTeamPhotoMobile" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
+                                <Image style={{position: "relative", marginTop: "10vh", marginLeft: 0, width: "100vw"}} src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event" width={1080} height={1080}></Image>
                             </div>
                         </div></div>
                     <div className="row row-deck">
                         <div className="col-lg-4">
                             <div className="d-flex align-self-center">
-                                <img className="meetTeamPhotoMobile" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
+                                <Image style={{position: "relative", marginTop: "10vh", marginLeft: 0, width: "100vw"}} src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event" width={1080} height={1080}></Image>
                             </div>
                         </div></div>
                 </div></>
@@ -115,16 +95,16 @@ overflow-y: hidden;
                 : <>            <div id="background" tabIndex={-25}>
                     <h1 id="pageTitle" tabIndex={-10}>MEET THE TEAM</h1>
                     <div className="d-flex align-self-center">
-                        <img id="firstMeetTeamPhoto" className="meetTeamPhoto" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event"></img>
-                        <img className="meetTeamPhoto" src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event"></img>
+                        <Image style={{position: "relative", marginLeft: "4vw", marginTop: "40vh"}} className="meetTeamPhoto" src="/meetTheTeamDiya.png" alt="Diya Rathee, Licensee/Organizer of the event" width={1080} height={1080}></Image>
+                        <Image style={{position: "relative", marginLeft: "4vw", marginTop: "40vh"}} src="/meetTheTeamAdrien.png" alt="Adrien Borudeaux, Website manager of the event" width={1080} height={1080}></Image>
                     </div>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event"></img>
-                        <img className="meetTeamPhoto" src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event"></img>
+                        <Image style={{position: "relative", marginLeft: "4vw", marginTop: "40vh"}} src="/meetTheTeamAfeef.png" alt="Afeef Imam, Editorial and Marketing manager of the event" width={1080} height={1080}></Image>
+                        <Image style={{position: "relative", marginLeft: "4vw", marginTop: "40vh"}} src="/meetTheTeamAlina.png" alt="Alina Feng, Event manager of the event" width={1080} height={1080}></Image>
                     </div>
                     <div className="d-flex align-self-center">
-                        <img className="meetTeamPhoto" src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event"></img>
-                        <img className="meetTeamPhoto" src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event"></img>
+                        <Image style={{position: "relative", marginLeft: "4vw", marginTop: "40vh"}} src="/meetTheTeamKunsh.png" alt="Kunsh Sood, Sponsorships manager of the event" width={1080} height={1080}></Image>
+                        <Image style={{position: "relative", marginLeft: "4vw", marginTop: "40vh"}} src="/meetTheTeamJoydrutt.png" alt="Joydrutt Chakraborty, Operations member of the event" width={1080} height={1080}></Image>
                     </div>
                 </div></>}
         </div>

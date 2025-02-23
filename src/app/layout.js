@@ -4,6 +4,8 @@ import { IconInfoSquare, IconNotebook, IconPhoto, IconCurrencyDollar, IconCalend
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import './globals.css';
+import Script from 'next/script';
+import Link from 'next/link';
 const mobile = require('is-mobile');
 
 export default function RootLayout({ children }) {
@@ -11,7 +13,7 @@ export default function RootLayout({ children }) {
     const [isMobile, setIsMobile] = useState(false)
     useEffect(() => {
         setIsMobile(mobile())
-    }) // site menu open/close icons don't want to click
+    }, []) // site menu open/close icons don't want to click
     return (
         <html>
             <body>
@@ -20,113 +22,112 @@ export default function RootLayout({ children }) {
                 <div id="approot">
                     <Analytics></Analytics>
                     <SpeedInsights></SpeedInsights>
-                    <link rel="stylesheet" href="/tabler.min.css"></link>
-                    <script src="/tabler.min.js"></script>
+                    <Script src="/tabler.min.js"></Script>
                     {siteMenuEnabled
                         ? <IconX stroke={2} size={44} id="menuIcon" onClick={CloseSiteMenu} color="#EB0028"></IconX>
                         : <IconMenu2 stroke={2} size={44} id="menuIcon" onClick={OpenSiteMenu} color="#EB0028"></IconMenu2>
                     }
                     {isMobile
                         ? <div id="siteMenuMobile">
-                            <a href="/">
+                            <Link className="link" href="/" onClick={CloseSiteMenu}>
                                 <div id="firstMenuElementMobile" className="menuElementMobile">
                                     <IconHome className="menuIconMobile" id="homeIcon" color="#EB0028"></IconHome>
                                     <h3 className="menuLabelMobile" id="homeLabel">Home</h3>
                                 </div>
-                            </a>
-                            <a href="/about">
+                            </Link>
+                            <Link className="link" href="/about" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconInfoSquare className="menuIconMobile" id="aboutIcon" color="#EB0028"></IconInfoSquare>
                                     <h3 className="menuLabelMobile" id="aboutLabel">About TED</h3>
                                 </div>
-                            </a>
-                            <a href="/media">
+                            </Link>
+                            <Link className="link" href="/media" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconPhoto className="menuIconMobile" id="mediaIcon" color="#EB0028"></IconPhoto>
                                     <h3 className="menuLabelMobile" id="mediaLabel">Media</h3>
                                 </div>
-                            </a>
-                            <a href="/sponsors">
+                            </Link>
+                            <Link className="link" href="/sponsors" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconCurrencyDollar className="menuIconMobile" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
                                     <h3 className="menuLabelMobile" id="sponsorsLabel">Sponsors</h3>
                                 </div>
-                            </a>
-                            <a href="/speakers">
+                            </Link>
+                            <Link className="link" href="/speakers" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconSpeakerphone className="menuIconMobile" id="speakersIcon" color="#EB0028"></IconSpeakerphone>
                                     <h3 className="menuLabelMobile" id="speakersLabel">Speakers</h3>
                                 </div>
-                            </a>
-                            <a href="/schedule">
+                            </Link>
+                            <Link className="link" href="/schedule" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconCalendarEvent className="menuIconMobile" id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
                                     <h3 className="menuLabelMobile" id="scheduleLabel">Schedule</h3>
                                 </div>
-                            </a>
-                            <a href="/ourteam">
+                            </Link>
+                            <Link className="link" href="/ourteam" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconUsers className="menuIconMobile" id="ourTeamIcon" color="#EB0028"></IconUsers>
                                     <h3 className="menuLabelMobile" id="ourTeamLabel" onAnimationEnd={EndAnimationSiteMenu}>Our Team</h3>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         : <div id="siteMenu">
-                            <a href="/">
+                            <Link className="link" href="/" onClick={CloseSiteMenu}>
                                 <div id="firstMenuElement" className="menuElement">
                                     <IconHome className="menuIcon" id="homeIcon" color="#EB0028"></IconHome>
                                     <h3 className="menuLabel" id="homeLabel">Home</h3>
                                 </div>
-                            </a>
-                            <a href="/about">
+                            </Link>
+                            <Link className="link" href="/about" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconInfoSquare className="menuIcon" id="aboutIcon" color="#EB0028"></IconInfoSquare>
                                     <h3 className="menuLabel" id="aboutLabel">About TED</h3>
                                 </div>
-                            </a>
-                            <a href="/media">
+                            </Link>
+                            <Link className="link" href="/media" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconPhoto className="menuIcon" id="mediaIcon" color="#EB0028"></IconPhoto>
                                     <h3 className="menuLabel" id="mediaLabel">Media</h3>
                                 </div>
-                            </a>
-                            <a href="/sponsors">
+                            </Link>
+                            <Link className="link" href="/sponsors" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconCurrencyDollar className="menuIcon" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
                                     <h3 className="menuLabel" id="sponsorsLabel">Sponsors</h3>
                                 </div>
-                            </a>
-                            <a href="/speakers">
+                            </Link>
+                            <Link className="link" href="/speakers" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconSpeakerphone className="menuIcon" id="speakersIcon" color="#EB0028"></IconSpeakerphone>
                                     <h3 className="menuLabel" id="speakersLabel">Speakers</h3>
                                 </div>
-                            </a>
-                            <a href="/schedule">
+                            </Link>
+                            <Link className="link" href="/schedule" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconCalendarEvent className="menuIcon" id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
                                     <h3 className="menuLabel" id="scheduleLabel">Schedule</h3>
                                 </div>
-                            </a>
-                            <a href="/ourteam">
+                            </Link>
+                            <Link className="link" href="/ourteam" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconUsers className="menuIcon" id="ourTeamIcon" color="#EB0028"></IconUsers>
                                     <h3 className="menuLabel" id="ourTeamLabel" onAnimationEnd={EndAnimationSiteMenu}>Our Team</h3>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     }
                     {children}
                     {!siteMenuEnabled && !isMobile
                         ? <><div className="footerPad"></div><div id="footer" tabIndex="50">
                             <h3 id="tedLicenseStatement" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
-                            <h3 id="tedXProgramLink" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
+                            <h3 id="tedXProgramLink" className="text-center text-white linkUnderlineWhite"><Link className="link" href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</Link></h3>
                         </div></>
                         : <></>}
                     {!siteMenuEnabled && isMobile
                         ? <><div className="footerPadMobile"></div><div id="footerMobile" tabIndex="50">
                             <h3 id="tedLicenseStatementMobile" className="text-center text-white">This independent TEDx event is operated under license from TED.</h3>
-                            <h3 id="tedXProgramLinkMobile" className="text-center text-white linkUnderlineWhite"><a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</a></h3>
+                            <h3 id="tedXProgramLinkMobile" className="text-center text-white linkUnderlineWhite"><Link className="link" href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx program</Link></h3>
                         </div></>
                         : <></>
                     }
