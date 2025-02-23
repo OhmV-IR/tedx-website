@@ -12,4 +12,7 @@ jobs:
               with:
                 node-version: 22
             - run: npm i
-            - run: npm run lint
+            - run: echo "$(npm run lint)" >> $GITHUB_OUTPUT
+            - name: Fail if lint errors
+              if: env.OUTPUT != "✔ No ESLint warnings or errors"
+              run: exit 1
