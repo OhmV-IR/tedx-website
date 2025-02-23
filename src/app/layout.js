@@ -29,43 +29,43 @@ export default function RootLayout({ children }) {
                     }
                     {isMobile
                         ? <div id="siteMenuMobile">
-                            <Link className="link" href="/">
+                            <Link className="link" href="/" onClick={CloseSiteMenu}>
                                 <div id="firstMenuElementMobile" className="menuElementMobile">
                                     <IconHome className="menuIconMobile" id="homeIcon" color="#EB0028"></IconHome>
                                     <h3 className="menuLabelMobile" id="homeLabel">Home</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/about">
+                            <Link className="link" href="/about" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconInfoSquare className="menuIconMobile" id="aboutIcon" color="#EB0028"></IconInfoSquare>
                                     <h3 className="menuLabelMobile" id="aboutLabel">About TED</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/media">
+                            <Link className="link" href="/media" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconPhoto className="menuIconMobile" id="mediaIcon" color="#EB0028"></IconPhoto>
                                     <h3 className="menuLabelMobile" id="mediaLabel">Media</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/sponsors">
+                            <Link className="link" href="/sponsors" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconCurrencyDollar className="menuIconMobile" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
                                     <h3 className="menuLabelMobile" id="sponsorsLabel">Sponsors</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/speakers">
+                            <Link className="link" href="/speakers" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconSpeakerphone className="menuIconMobile" id="speakersIcon" color="#EB0028"></IconSpeakerphone>
                                     <h3 className="menuLabelMobile" id="speakersLabel">Speakers</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/schedule">
+                            <Link className="link" href="/schedule" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconCalendarEvent className="menuIconMobile" id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
                                     <h3 className="menuLabelMobile" id="scheduleLabel">Schedule</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/ourteam">
+                            <Link className="link" href="/ourteam" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconUsers className="menuIconMobile" id="ourTeamIcon" color="#EB0028"></IconUsers>
                                     <h3 className="menuLabelMobile" id="ourTeamLabel" onAnimationEnd={EndAnimationSiteMenu}>Our Team</h3>
@@ -73,43 +73,43 @@ export default function RootLayout({ children }) {
                             </Link>
                         </div>
                         : <div id="siteMenu">
-                            <Link className="link" href="/">
+                            <Link className="link" href="/" onClick={CloseSiteMenu}>
                                 <div id="firstMenuElement" className="menuElement">
                                     <IconHome className="menuIcon" id="homeIcon" color="#EB0028"></IconHome>
                                     <h3 className="menuLabel" id="homeLabel">Home</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/about">
+                            <Link className="link" href="/about" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconInfoSquare className="menuIcon" id="aboutIcon" color="#EB0028"></IconInfoSquare>
                                     <h3 className="menuLabel" id="aboutLabel">About TED</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/media">
+                            <Link className="link" href="/media" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconPhoto className="menuIcon" id="mediaIcon" color="#EB0028"></IconPhoto>
                                     <h3 className="menuLabel" id="mediaLabel">Media</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/sponsors">
+                            <Link className="link" href="/sponsors" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconCurrencyDollar className="menuIcon" id="sponsorsIcon" color="#EB0028"></IconCurrencyDollar>
                                     <h3 className="menuLabel" id="sponsorsLabel">Sponsors</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/speakers">
+                            <Link className="link" href="/speakers" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconSpeakerphone className="menuIcon" id="speakersIcon" color="#EB0028"></IconSpeakerphone>
                                     <h3 className="menuLabel" id="speakersLabel">Speakers</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/schedule">
+                            <Link className="link" href="/schedule" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconCalendarEvent className="menuIcon" id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
                                     <h3 className="menuLabel" id="scheduleLabel">Schedule</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/ourteam">
+                            <Link className="link" href="/ourteam" onClick={CloseSiteMenu}>
                                 <div className="menuElement">
                                     <IconUsers className="menuIcon" id="ourTeamIcon" color="#EB0028"></IconUsers>
                                     <h3 className="menuLabel" id="ourTeamLabel" onAnimationEnd={EndAnimationSiteMenu}>Our Team</h3>
