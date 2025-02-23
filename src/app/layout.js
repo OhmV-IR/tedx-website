@@ -47,12 +47,6 @@ export default function RootLayout({ children }) {
                                     <h3 className="menuLabelMobile" id="speakersLabel">Speakers</h3>
                                 </div>
                             </Link>
-                            <Link className="link" href="/schedule" onClick={CloseSiteMenu}>
-                                <div className="menuElementMobile">
-                                    <IconCalendarEvent className="menuIconMobile" id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
-                                    <h3 className="menuLabelMobile" id="scheduleLabel">Schedule</h3>
-                                </div>
-                            </Link>
                             <Link className="link" href="/ourteam" onClick={CloseSiteMenu}>
                                 <div className="menuElementMobile">
                                     <IconUsers className="menuIconMobile" id="ourTeamIcon" color="#EB0028"></IconUsers>
@@ -77,12 +71,6 @@ export default function RootLayout({ children }) {
                                 <div className="menuElement">
                                     <IconSpeakerphone className="menuIcon" id="speakersIcon" color="#EB0028"></IconSpeakerphone>
                                     <h3 className="menuLabel" id="speakersLabel">Speakers</h3>
-                                </div>
-                            </Link>
-                            <Link className="link" href="/schedule" onClick={CloseSiteMenu}>
-                                <div className="menuElement">
-                                    <IconCalendarEvent className="menuIcon" id="scheduleIcon" color="#EB0028"></IconCalendarEvent>
-                                    <h3 className="menuLabel" id="scheduleLabel">Schedule</h3>
                                 </div>
                             </Link>
                             <Link className="link" href="/ourteam" onClick={CloseSiteMenu}>
