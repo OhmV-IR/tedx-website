@@ -172,7 +172,7 @@ h1 {
     position: relative;
     align: center;
     width: 100vw;
-    margin-top: 40vh;
+    margin-top: 65vh;
 }
 .widerButtonMobile {
   width: 45vw;
@@ -185,49 +185,38 @@ h1 {
   height: 75vh;
   background-color: black;
 }
+#eventSlogan {
+  color: white;
+  position: absolute;
+  left: 78vw;
+  top: 80vh;
+  font-size: 132%;
+  scale: 5;
+  height: 30vh;
+  text-align: center;
+  font-family: "Bad Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#eventSloganMobile {
+  color: white;
+  position: absolute;
+  left: 43.5vw;
+  top: 48vh;
+  font-size: 132%;
+  scale: 4;
+  height: 30vh;
+  text-align: center;
+  font-family: "Bad Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
     `}</style>
     {isMobile
     ?<><div id="successAlert" className="alert alert-success" role="alert">Mailing list signup successful!</div>
     <div id="failedAlert" className="alert alert-danger" role="alert">Mailing list signup failed!</div> 
-      <Image id="iconCarouselBackgroundMobile" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "65vh", width: "100vw"}} src="/tedxbackground.png" width={2000} height={1545} alt="A swirly colorful background." layout="fill"></Image>
-      <div id="iconCarouselMobile" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div className="carousel-indicators visually-hidden">
-          <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="0" className="active"></button>
-          <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="4"></button>
-          <button type="button" data-bs-target="#iconCarouselMobile" data-bs-slide-to="5"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <IconUsersGroup className="largeIcon" ></IconUsersGroup>
-          </div>
-          <div className="carousel-item">
-            <IconLeaf className="largeIcon" ></IconLeaf>
-          </div>
-          <div className="carousel-item">
-            <IconCoinEuro className="largeIcon" ></IconCoinEuro>
-          </div>
-          <div className="carousel-item">
-            <IconWorld className="largeIcon" ></IconWorld>
-          </div>
-          <div className="carousel-item">
-            <IconFirstAidKit className="largeIcon" ></IconFirstAidKit>
-          </div>
-          <div className="carousel-item">
-            <IconHeartRateMonitor className="largeIcon" ></IconHeartRateMonitor>
-          </div>
-          <a className="carousel-control-prev visually-hidden" data-bs-target="#iconCarouselMobile" role="button" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </a>
-          <a className="carousel-control-next visually-hidden" data-bs-target="#iconCarouselMobile" role="button" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </a>
-        </div>
-      </div>
+      <Image id="iconCarouselBackgroundMobile" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "65vh", width: "100vw"}} src="/tedxbackground.png" width={2000} height={1545} alt="A swirly colorful background."></Image>
+      <h3 id="eventSloganMobile">Power of<br></br>Us</h3>
       <center><div id="ctaButtonMobile">
         <a href="#"><button type="button" className="btn btn-danger widerButtonMobile">Get tickets now!</button></a>
         <button type="button" className="btn btn-outline-danger widerButtonMobile" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
@@ -276,44 +265,7 @@ h1 {
     <div id="failedAlert" className="alert alert-danger" role="alert">Mailing list signup failed!</div> 
     <div id="blackBg"></div>
     <Image src="/tedxbackground.png" style={{position: "absolute", left: 0, top: 0, zIndex: -2, height: "75vh", width: "65vw", zIndex: -10}} width={1920} height={1080} alt="A swirly colorful background."></Image>
-      <div id="iconCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div className="carousel-indicators visually-hidden">
-          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="0" className="active"></button>
-          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="4"></button>
-          <button type="button" data-bs-target="#iconCarousel" data-bs-slide-to="5"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <IconUsersGroup className="largeIcon iconWhite" ></IconUsersGroup>
-          </div>
-          <div className="carousel-item">
-            <IconLeaf className="largeIcon iconWhite" ></IconLeaf>
-          </div>
-          <div className="carousel-item">
-            <IconCoinEuro className="largeIcon iconWhite" ></IconCoinEuro>
-          </div>
-          <div className="carousel-item">
-            <IconWorld className="largeIcon iconWhite" ></IconWorld>
-          </div>
-          <div className="carousel-item">
-            <IconFirstAidKit className="largeIcon iconWhite" ></IconFirstAidKit>
-          </div>
-          <div className="carousel-item">
-            <IconHeartRateMonitor className="largeIcon iconWhite" ></IconHeartRateMonitor>
-          </div>
-          <a className="carousel-control-prev visually-hidden" data-bs-target="#iconCarousel" role="button" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </a>
-          <a className="carousel-control-next visually-hidden" data-bs-target="#iconCarousel" role="button" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </a>
-        </div>
-      </div>
+      <h3 id="eventSlogan">Power of<br></br>Us</h3>
       <center><div id="ctaButton">
         <a href="#"><button type="button" className="btn btn-danger widerButton">Get tickets now!</button></a>
         <button type="button" className="btn btn-outline-danger widerButton" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
