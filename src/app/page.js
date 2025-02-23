@@ -172,7 +172,7 @@ h1 {
     position: relative;
     align: center;
     width: 100vw;
-    margin-top: 45vh;
+    margin-top: 40vh;
 }
 .widerButtonMobile {
   width: 45vw;
