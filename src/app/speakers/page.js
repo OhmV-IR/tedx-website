@@ -29,7 +29,6 @@ export default function Page() {
 .speakerCard {
     overflow-y: hidden;
     width: 25vw;
-    z-index: -5;
     position: relative;
     margin-left: 4vw;
     margin-top: 10vh;
