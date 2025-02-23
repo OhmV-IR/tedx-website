@@ -32,10 +32,7 @@ export default function Page() {
     width: 85vw;
 }
 .linkUnderline {
-    text-decoration: underline !important;
-    text-decoration-color: #eb2008 !important;
-    text-decoration-style: solid !important;
-    text-decoration-thickness: 2px !important;
+    color: #eb2008 !important;
 }
         `}</style>
         <strong><h1 id="aboutTedXHeader">About TEDx</h1></strong>
