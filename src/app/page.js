@@ -93,6 +93,13 @@ function Homepage() {
   height: 35vh;
   margin-top: -5vh;
 }
+#eventInfoMobile {
+  position: relative;
+  align: center;
+  width: 100vw;
+  height: 35vh;
+  margin-top: -5vh;
+}
 .widerButton {
   width: 35vw;
 }
@@ -164,7 +171,7 @@ h1 {
 }
 #aboutTEDxHeaderMobile {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 0vh;
     margin-left: 5vw;
     color: #eb2008;
     font-size: xx-large;
@@ -232,6 +239,12 @@ h1 {
         <a href="https://www.eventbrite.ca/e/tedxcentreville-chicopee-youth-tickets-1109230090059?aff=oddtdtcreator"><button type="button" className="btn btn-danger widerButtonMobile">Get tickets now!</button></a>
         <button type="button" className="btn btn-outline-danger widerButtonMobile" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
       </div></center>
+      <div id="eventInfoMobile">
+      <IconCalendar size={48} color="#eb2008" style={{position: 'absolute', left: "5vw", top: "25%"}}></IconCalendar>
+      <h1 className="eventInfoText" style={{position: 'absolute', left: "24vw", top: "26.65%"}}>Sunday, April 27th, 2025</h1>
+      <IconClock size={48} color="#eb2008" style={{position: 'absolute', left: "5vw", top: "50%"}}></IconClock>
+      <h1 className="eventInfoText" style={{position: 'absolute', left: "24vw", top: "50%"}}>11:00 AM - 5:00 PM EDT. <br></br>Doors at 10:45am</h1>
+      </div>
       <div className="modal fade" id="emailSubmissionModal" tabIndex="-1">
         <div className="modal-dialog modal-xl" role="document">
           <div className="modal-content">
