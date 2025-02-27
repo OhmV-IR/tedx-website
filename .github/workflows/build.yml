@@ -1,0 +1,25 @@
+name: Build
+run-name: Running test build on ${{ github.actor }}'s deployment
+on: [pull_request]
+jobs:
+    Run-Build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository code
+              uses: actions/checkout@v4
+            - name: Setup nodejs
+              uses: actions/setup-node@v4
+              with:
+                node-version: 22
+            - name: Install dependencies
+              run: npm i
+            - name: Add envfile
+              uses: SpicyPizza/create-envfile@v2.0
+              with:
+                envkey_DB_ENDPOINT: ${{secrets.DB_ENDPOINT}}
+                envkey_DB_KEY: ${{secrets.DB_KEY}}
+                envkey_DB_ID: ${{secrets.DB_ID}}
+                envkey_CONTAINER_ID: ${{secrets.CONTAINER_ID}}
+                file_name: .env
+            - name: Build site
+              run: npm run build
