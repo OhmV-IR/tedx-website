@@ -1,5 +1,5 @@
 'use client'
-import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, IconHeartRateMonitor, IconMail } from '@tabler/icons-react';
+import { IconUsersGroup, IconLeaf, IconCoinEuro, IconWorld, IconFirstAidKit, IconHeartRateMonitor, IconMail, IconCalendar, IconClock } from '@tabler/icons-react';
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 const mobile = require('is-mobile')
@@ -69,7 +69,7 @@ function Homepage() {
       <style jsx>{`
     #aboutTEDxHeader {
     position: relative;
-    margin-top: 10vh;
+    margin-top: 2vh;
     margin-left: 5vw;
     color: #eb2008;
     font-size: xx-large;
@@ -85,6 +85,13 @@ function Homepage() {
     align: center;
     width: 100vw;
     margin-top: 78vh;
+}
+#eventInfo {
+  position: relative;
+  align: center;
+  width: 100vw;
+  height: 35vh;
+  margin-top: -5vh;
 }
 .widerButton {
   width: 35vw;
@@ -211,6 +218,10 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+.eventInfoText {
+  font-size: 150%;
+  text-align: center;
+}
     `}</style>
     {isMobile
     ?<><div id="successAlert" className="alert alert-success" role="alert">Mailing list signup successful!</div>
@@ -270,6 +281,12 @@ h1 {
         <a href="https://www.eventbrite.ca/e/tedxcentreville-chicopee-youth-tickets-1109230090059?aff=oddtdtcreator"><button type="button" className="btn btn-danger widerButton">Get tickets now!</button></a>
         <button type="button" className="btn btn-outline-danger widerButton" data-bs-toggle="modal" data-bs-target="#emailSubmissionModal">Sign up for mailing list</button>
       </div></center>
+      <div id="eventInfo">
+      <IconCalendar size={48} color="#eb2008" style={{position: 'absolute', left: "5vw", top: "50%"}}></IconCalendar>
+      <h1 className="eventInfoText" style={{position: 'absolute', left: "13vw", top: "54%"}}>Sunday, April 27th, 2025</h1>
+      <IconClock size={48} color="#eb2008" style={{position: 'absolute', left: "45vw", top: "50%"}}></IconClock>
+      <h1 className="eventInfoText" style={{position: 'absolute', left: "55vw", top: "54%"}}>11:00 AM - 5:00 PM EDT. Doors at 10:45am</h1>
+      </div>
       <div className="modal fade" id="emailSubmissionModal" tabIndex="-1">
         <div className="modal-dialog modal-xl" role="document">
           <div className="modal-content">
