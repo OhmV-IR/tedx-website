@@ -21,6 +21,5 @@ jobs:
                 envkey_DB_ID: ${{secrets.DB_ID}}
                 envkey_CONTAINER_ID: ${{secrets.CONTAINER_ID}}
                 file_name: .env
-                directory: "/"
             - name: Build site
               run: npm run build
