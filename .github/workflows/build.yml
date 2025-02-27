@@ -13,5 +13,14 @@ jobs:
                 node-version: 22
             - name: Install dependencies
               run: npm i
+            - name: Add envfile
+              uses: SpicyPizza/create-envfile@v2.0
+              with:
+                envkey_DB_ENDPOINT: ${{secrets.DB_ENDPOINT}}
+                envkey_DB_KEY: ${{secrets.DB_KEY}}
+                envkey_DB_ID: ${{secrets.DB_ID}}
+                envkey_CONTAINER_ID: ${{secrets.CONTAINER_ID}}
+                file_name: .env
+                directory: "/"
             - name: Build site
               run: npm run build
