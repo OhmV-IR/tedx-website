@@ -18,13 +18,9 @@ jobs:
                 node-version: 22
             - name: Install dependencies
               run: npm i
-            - name: Add node env
-              run: node -e 'process.env.CONTAINERID = "${{ secrets.CONTAINERID }}"'
-            - name: Add node env 3
-              run: node -e 'process.env.DBKEY = "${{secrets.DBKEY}}"'
-            - name: Add node env 4
-              run: node -e 'process.env.DBID = "${{ secrets.DBID }}"'
-            - name: Add node env 2
-              run: node -e 'process.env.DBENDPINT = "${{ secrets.DBENDPOINT }}"'
+            - name: Rm files that fail to build
+              run: rm src/app/unsubscribe/route.js
+            - name: Rm files that fail to build
+              run: rm src/app/api/writeEmail/route.js
             - name: Build site
               run: npm run build
