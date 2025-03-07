@@ -16,10 +16,10 @@ jobs:
             - name: 'Create env file'
               run: |
                 touch .env
-                echo CONTAINER_ID=${{ secrets.CONTAINER_ID }} >> .env
-                echo DB_ENDPOINT=${{ secrets.DB_ENDPOINT }} >> .env
-                echo DB_ID=${{ secrets.DB_ID }} >> .env
-                echo DB_KEY=${{ secrets.DB_KEY }} >> .env
+                echo CONTAINERID=${{ secrets.CONTAINER_ID }} >> .env
+                echo DBENDPOINT=${{ secrets.DB_ENDPOINT }} >> .env
+                echo DBID=${{ secrets.DB_ID }} >> .env
+                echo DBKEY=${{ secrets.DB_KEY }} >> .env
                 cat .env
             - name: Build site
               run: npm run build
