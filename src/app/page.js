@@ -90,8 +90,8 @@ function Homepage() {
   position: relative;
   align: center;
   width: 100vw;
-  height: 35vh;
-  margin-top: -5vh;
+  height: 25vh;
+  margin-top: 0vh;
 }
 #eventInfoMobile {
   position: relative;
